@@ -2036,7 +2036,7 @@
         }
       }
       
-      window.location.href = 'index.html';
+      window.location.href = 'Main.html';
     }
 
     // Community Live Toggle

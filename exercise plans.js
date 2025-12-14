@@ -1752,7 +1752,7 @@
         }
       }
       
-      window.location.href = 'index.html';
+      window.location.href = 'Main.html';
     }
 
     // Initial render

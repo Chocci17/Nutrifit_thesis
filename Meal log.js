@@ -584,8 +584,8 @@
         }
       }
       
-      // Redirect to index.html
-      window.location.href = 'index.html';
+      // Redirect to Main.html
+      window.location.href = 'Main.html';
     }
 
     // Terms Modal Functions
