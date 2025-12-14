@@ -120,7 +120,7 @@
         }
       }
       
-      window.location.href = 'Main.html';
+      window.location.href = 'index.html';
     }
 
     function getBMICategory(bmi) {
@@ -157,7 +157,7 @@
       if (records.length === 0) {
         contentDiv.innerHTML = `
           <div class="empty-state">
-            <div class="empty-state-icon">📊</div>
+            <div class="empty-state-icon">ðŸ“Š</div>
             <div class="empty-state-text">No BMI Data Available</div>
             <div class="empty-state-subtext">Start tracking your BMI to see analytics and insights here.</div>
           </div>
@@ -204,15 +204,15 @@
         
         if (bmiChange < 0) {
           progressStatus = 'improving';
-          progressIcon = '📉';
+          progressIcon = 'ðŸ“‰';
           progressMessage = 'Great job! Your BMI has decreased this week.';
         } else if (bmiChange > 0) {
           progressStatus = 'increasing';
-          progressIcon = '📈';
+          progressIcon = 'ðŸ“ˆ';
           progressMessage = 'Your BMI has increased this week. Consider reviewing your goals.';
         } else {
           progressStatus = 'stable';
-          progressIcon = '➡️';
+          progressIcon = 'âž¡ï¸';
           progressMessage = 'Your BMI has remained stable this week.';
         }
         
@@ -231,7 +231,7 @@
               </div>
               <div class="progress-metric">
                 <span class="metric-label">Category:</span>
-                <span class="metric-value">${firstCategory} → ${lastCategory}</span>
+                <span class="metric-value">${firstCategory} â†’ ${lastCategory}</span>
               </div>
               <div class="progress-metric">
                 <span class="metric-label">Records This Week:</span>
@@ -243,7 +243,7 @@
       } else if (weeklyRecords.length === 1) {
         weeklyProgressHTML = `
           <div class="progress-result stable">
-            <div class="progress-icon">📊</div>
+            <div class="progress-icon">ðŸ“Š</div>
             <div class="progress-message">You have 1 BMI record this week. Add more entries to track your progress!</div>
             <div class="progress-details">
               <div class="progress-metric">
@@ -260,7 +260,7 @@
       } else {
         weeklyProgressHTML = `
           <div class="progress-result stable">
-            <div class="progress-icon">📝</div>
+            <div class="progress-icon">ðŸ“</div>
             <div class="progress-message">No BMI records in the last 7 days. Start tracking to see your weekly progress!</div>
           </div>
         `;
@@ -270,7 +270,7 @@
       contentDiv.innerHTML = `
         <!-- Weekly Progress Summary -->
         <div class="chart-container">
-          <div class="chart-title">📊 Weekly Progress Summary (Last 7 Days)</div>
+          <div class="chart-title">ðŸ“Š Weekly Progress Summary (Last 7 Days)</div>
           ${weeklyProgressHTML}
         </div>
 

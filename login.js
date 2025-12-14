@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
           localStorage.setItem('nutrifit_session', JSON.stringify(data.session));
 
           alert('Email confirmed! Welcome to NutriFit!');
-          window.location.href = 'Main.html';
+          window.location.href = 'index.html';
         }
       } catch (err) {
         console.error('Confirmation error:', err);
@@ -127,8 +127,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
         alert('Login successful!');
         
-        // Redirect to Main.html where profile check will run
-        window.location.href = 'Main.html';
+        // Redirect to index.html where profile check will run
+        window.location.href = 'index.html';
       }
 
     } catch (err) {

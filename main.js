@@ -188,7 +188,7 @@ async function handleProfileSetupSubmit() {
 
     // Success
     console.log('Profile setup completed successfully!');
-    alert('Profile setup complete! Welcome to NutriFit! 🎉');
+    alert('Profile setup complete! Welcome to NutriFit! ðŸŽ‰');
     closeProfileSetupModal();
     
     // Redirect to Meal log page
