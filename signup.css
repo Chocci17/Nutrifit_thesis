@@ -1,0 +1,183 @@
+/* Styles extracted from original inline CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+  background-color: #1C352D;
+  color: #fff;
+}
+
+.navbar {
+      position: relative;
+      z-index: 6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .75rem 1.5rem;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+      backdrop-filter: blur(6px);
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      color: white;
+    }
+    .navbar-logo {
+      width: 44px;
+      height: 44px;
+    }
+    .navbar-links-container a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.9);
+      padding: .35rem .6rem;
+      border-radius: 6px;
+    }
+    .navbar-links-container a:hover {
+      background: rgba(255, 255, 255, 0.04);
+    }
+    
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.left-panel {
+  flex: 1;
+  background-image: url('signup.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.right-panel {
+  flex: 1;
+  background: url ;
+  background-color: #004030;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  color: #1C352D;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.form-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-box p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-box label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-box input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #67C090;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-box button:hover {
+  background-color: #064232;
+}
+
+.form-box .login-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-box .login-link a {
+  color: #064232;
+  text-decoration: none;
+}
+
+.form-box .login-link a:hover {
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: #ffffff;
+  color: #1C352D;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.modal-content h2 {
+  color: #064232;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: #67C090;
+  cursor: pointer;
+}

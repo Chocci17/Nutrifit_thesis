@@ -1,0 +1,488 @@
+  :root{ --bg:#071025; --panel:#0f1724; --muted:#9ca3af; --text:#e6eef6; --accent:#10b981; --accent-2:#047857; --card:#0b1220 }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);min-height:100vh;padding:20px;padding-top:100px;position:relative;overflow-x:hidden}
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .75rem 1.5rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      backdrop-filter: blur(6px);
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      color: rgba(255, 255, 255, 0.95);
+      font-weight: 700;
+      cursor: pointer;
+      padding: .5rem;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+      position: relative;
+    }
+    .navbar-brand:hover {
+      background: rgba(255,255,255,0.06);
+    }
+    .navbar-logo {
+      width: 44px;
+      height: 44px;
+    }
+    
+    /* Dropdown Sidebar */
+    .dropdown-sidebar {
+      position: fixed;
+      top: 70px;
+      left: -320px;
+      width: 300px;
+      max-height: calc(100vh - 90px);
+      background: linear-gradient(180deg, rgba(17, 24, 39, 0.98), rgba(15, 23, 36, 0.98));
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      padding: 20px;
+      transition: left 0.3s ease;
+      z-index: 999;
+      border: 1px solid rgba(255,255,255,0.1);
+      overflow-y: auto;
+    }
+    
+    .dropdown-sidebar.active {
+      left: 20px;
+    }
+    
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border-radius: 10px;
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      margin-bottom: 4px;
+    }
+    
+    .sidebar-item:hover {
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,1);
+      transform: translateX(4px);
+    }
+    
+    .sidebar-item-icon {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    
+    .sidebar-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.1);
+      margin: 16px 0;
+    }
+    
+    .sidebar-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 998;
+    }
+    
+    .sidebar-overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .navbar-links-container a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: rgba(255,255,255,0.9);
+      padding: .35rem .6rem;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .navbar-links-container a:hover {
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,255,255,0.95);
+    }
+
+    /* ensure page content isn't hidden under fixed navbar (match BMI styling) */
+    /* body padding already set above to 100px */
+
+    /* Background video styling */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    /* dark overlay above the video to improve contrast (copied from BMI.html) */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(15, 23, 42, 0.85);
+      z-index: -1;
+    }
+
+    /* Adjust sizing to match BMI.html containers */
+    body { font-size: 16px; }
+    .container{max-width:1400px;margin:0 auto;}
+    .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .brand{font-weight:800;font-size:1.25rem}
+
+    /* Match BMI.html: three equal columns with wider gap */
+    .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;margin-top:20px}
+    @media (max-width:1200px){ .grid{grid-template-columns:1fr 1fr;} }
+    @media (max-width:768px){ .grid{grid-template-columns:1fr;} .panel-right, .panel-left{order:2} }
+
+    /* Card styling aligned with BMI.html */
+    .card{background:#ffffff;color:#111;border-radius:20px;padding:40px;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:none}
+
+    /* Calendar card layout: keep a stable height and make selected meals scrollable */
+    .card.calendar-card{display:flex;flex-direction:column;min-height:460px}
+    .card.calendar-card .calendar{display:flex;flex-direction:column;gap:10px;flex:1}
+    .cal-grid{flex:0 0 auto}
+
+    /* Left: entry form */
+    form .row{display:flex;gap:10px}
+    form label{display:block;font-size:1.05rem;color:#555;margin-bottom:10px}
+    input[type=date], input[type=number], select, textarea, input[type=text]{width:100%;padding:16px;border-radius:12px;border:1px solid #e6e6e6;background:#ffffff;color:#111;font-size:1.05rem}
+    textarea{min-height:80px}
+    .btn{display:inline-block;padding:14px 22px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;border:none;cursor:pointer;font-weight:700;font-size:1.05rem}
+    .btn.secondary{background:transparent;border:1px solid #ddd;color:#111;padding:12px 16px}
+    .btn.danger{background:#ef4444;color:#fff;border:none;padding:12px 16px;border-radius:10px;cursor:pointer}
+
+    .small{font-size:0.85rem;color:var(--muted)}
+
+    /* Calendar */
+    .calendar{display:flex;flex-direction:column;gap:10px}
+    .cal-head{display:flex;justify-content:space-between;align-items:center}
+    .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+    .cal-day{background:#ffffff;padding:16px;border-radius:10px;min-height:100px;position:relative;border:1px solid rgba(0,0,0,0.04);color:#111;font-size:1.05rem}
+    .cal-day.selected{outline:2px solid rgba(16,185,129,0.18);box-shadow:0 6px 18px rgba(16,185,129,0.04);}
+    .cal-day .date{font-weight:700}
+    /* small indicator for days that have meals */
+    .badge{position:absolute;top:12px;right:12px;width:10px;height:10px;background:var(--accent);border-radius:50%;}
+    .cal-day.hover{outline:2px solid rgba(255,255,255,0.04)}
+
+    .today{box-shadow:0 6px 20px rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.12)}
+
+    /* Right: macro tracker */
+    .macros{display:flex;flex-direction:column;gap:12px}
+    .macro-row{display:flex;justify-content:space-between;align-items:center;position:relative}
+    .macro-row .target-hit{color:var(--accent);font-weight:700;margin-left:8px;font-size:1.2rem}
+    .progress{height:14px;background:#f1f1f1;border-radius:10px;overflow:hidden;position:relative}
+    .fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2));width:0%;transition:width 0.3s ease}
+    .fill.target-achieved{background:linear-gradient(90deg,#10b981,#059669);box-shadow:0 0 10px rgba(16,185,129,0.5)}
+    .target-success{background:linear-gradient(135deg,#10b981,#047857);color:#fff;padding:16px;border-radius:12px;text-align:center;font-weight:700;margin-bottom:16px;box-shadow:0 4px 12px rgba(16,185,129,0.3);animation:slideIn 0.5s ease}
+    @keyframes slideIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+
+    /* list of meals for selected day */
+    .meals-list{margin-top:14px;display:flex;flex-direction:column;gap:12px;max-height:320px;overflow-y:auto;padding-right:8px}
+    .meal-item{background:#ffffff;padding:16px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;border:1px solid rgba(0,0,0,0.04);color:#111}
+    .muted{color:#666}
+
+    /* Bottom panel: full-width container for selected-day viewer */
+    .bottom-panel{margin-top:30px;background:#ffffff;color:#111;border-radius:18px;padding:20px;box-shadow:0 18px 50px rgba(2,6,23,0.28);border:none}
+    .bottom-panel .panel-header{font-weight:800;margin-bottom:12px}
+    .bottom-panel .meals-list{display:flex;flex-direction:row;gap:14px;overflow-x:auto;max-height:none;padding-bottom:8px;margin-top:12px}
+    
+    /* Horizontal meal cards */
+    .bottom-panel .meal-item{min-width:280px;flex:0 0 280px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:16px;border-radius:12px}
+    .bottom-panel .meal-item > div:first-child{width:100%}
+    .bottom-panel .meal-item .muted{margin-top:4px;font-size:0.9rem}
+    .bottom-panel .meal-item > div:last-child{width:100%;display:flex;justify-content:space-between;align-items:center;margin-top:4px}
+    
+    /* Mobile: stack vertically */
+    @media (max-width:768px){
+      .bottom-panel .meals-list{flex-direction:column;overflow-x:visible}
+      .bottom-panel .meal-item{min-width:auto;flex:1;width:100%}
+    }
+
+    footer{margin-top:18px;color:var(--muted);font-size:1rem}
+
+    /* ---------- About Modal Styles ---------- */
+    .about-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .about-modal.active {
+      display: flex;
+    }
+
+    .about-modal-content {
+      max-width: 1120px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
+      padding: 32px 36px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+      gap: 32px;
+      position: relative;
+      overflow: hidden;
+      animation: modalSlideIn 0.3s ease;
+    }
+
+    @keyframes modalSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .about-modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.05);
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease;
+      z-index: 10;
+    }
+
+    .about-modal-close:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .about-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #e4f3eb;
+      color: #18412f;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #ff6b6b;
+    }
+
+    .about-title {
+      font-family: 'Poppins', system-ui, sans-serif;
+      font-size: 30px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #18412f;
+      margin-bottom: 14px;
+    }
+
+    .about-tagline {
+      font-family: 'Poppins', system-ui, sans-serif;
+      font-size: 18px;
+      color: #555555;
+      margin-bottom: 18px;
+    }
+
+    .about-body {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #555555;
+      margin-bottom: 14px;
+    }
+
+    .about-graphic-wrapper {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .watermelon-card {
+      width: 230px;
+      height: 230px;
+      border-radius: 40px;
+      background: radial-gradient(circle at 30% 10%, #58a36b 0, #18412f 55%, #0f261c 100%);
+      box-shadow: 0 24px 40px rgba(0, 0, 0, 0.25);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 900px) {
+      .about-modal-content {
+        grid-template-columns: 1fr;
+        padding: 26px 22px;
+      }
+
+      .about-graphic-wrapper {
+        order: -1;
+      }
+
+      .watermelon-card {
+        width: 210px;
+        height: 210px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .about-modal-content {
+        padding: 22px 18px;
+        border-radius: 18px;
+      }
+
+      .about-title {
+        font-size: 24px;
+      }
+
+      .about-tagline {
+        font-size: 16px;
+      }
+
+      .about-body {
+        font-size: 13px;
+      }
+
+      .watermelon-card {
+        width: 190px;
+        height: 190px;
+      }
+    }
+
+    /* ---------- Terms and Conditions Modal Styles ---------- */
+    .terms-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .terms-modal.active {
+      display: flex;
+    }
+
+    .terms-modal-content {
+      max-width: 800px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
+      padding: 40px;
+      position: relative;
+      animation: modalSlideIn 0.3s ease;
+    }
+
+    .terms-modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.05);
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease;
+      z-index: 10;
+    }
+
+    .terms-modal-close:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .terms-header {
+      margin-bottom: 24px;
+    }
+
+    .terms-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .terms-title {
+      font-family: 'Poppins', system-ui, sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: #18412f;
+      margin-bottom: 8px;
+    }
+
+    .terms-content {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .terms-modal-content {
+        padding: 24px;
+      }
+
+      .terms-title {
+        font-size: 24px;
+      }
+
+      .terms-content {
+        font-size: 14px;
+      }
+    }
