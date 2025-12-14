@@ -199,15 +199,24 @@
           // run scripts from fetched HTML
           const scriptRe = /<script([^>]*)>([\s\S]*?)<\/script>/ig;
           let sm;
+          const appendedScripts = [];
           while ((sm = scriptRe.exec(html)) !== null){
             const attrs = sm[1]; const inline = sm[2];
             const srcMatch = attrs.match(/src=["']([^"']+)["']/i);
             if (srcMatch){
-              const s = document.createElement('script'); s.src = srcMatch[1]; s.defer = false; document.body.appendChild(s);
+              const s = document.createElement('script'); s.src = srcMatch[1]; s.defer = false; document.body.appendChild(s); appendedScripts.push(s);
             } else if (inline && inline.trim()){
-              const s = document.createElement('script'); s.textContent = inline; document.body.appendChild(s);
+              const s = document.createElement('script'); s.textContent = inline; document.body.appendChild(s); appendedScripts.push(s);
             }
           }
+
+          // After scripts are appended, give them a moment to register listeners, then dispatch load-like events
+          setTimeout(()=>{
+            try{
+              document.dispatchEvent(new Event('DOMContentLoaded'));
+            }catch(e){console.warn('Could not dispatch DOMContentLoaded:', e)}
+            try{ window.dispatchEvent(new Event('load')); }catch(e){console.warn('Could not dispatch load:', e)}
+          }, 50);
 
           container.dataset.loaded = 'true';
           showOnly(container.id);
