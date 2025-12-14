@@ -147,7 +147,7 @@
       if (records.length === 0) {
         progressList.innerHTML = `
           <div class="empty-state">
-            <div class="empty-state-icon">📊</div>
+            <div class="empty-state-icon">ðŸ“Š</div>
             <p>No progress records yet. Calculate your BMI to get started!</p>
           </div>
         `;

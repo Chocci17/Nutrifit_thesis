@@ -1363,7 +1363,7 @@
         "Romanian Deadlifts": "Hip hinge with slight knee bend. Lower bar down legs keeping back flat. Feel hamstring stretch. Drive hips forward to stand.",
         "Barbell Rows": "Bent over at hips, bar hanging. Pull bar to lower chest/upper abs. Squeeze shoulder blades. Lower with control. Build thick back.",
         "Barbell Bench Press": "Standard bench press. Lie flat, feet planted. Lower bar to chest, press to lockout. Primary chest builder.",
-        "Incline Dumbbell Press": "On inclined bench (30-45°). Press dumbbells overhead. Targets upper chest. Full range of motion for size.",
+        "Incline Dumbbell Press": "On inclined bench (30-45Â°). Press dumbbells overhead. Targets upper chest. Full range of motion for size.",
         "Leg Press": "Seated machine exercise. Push platform away by extending legs. Keep back flat on pad. Good quad builder, easier on lower back than squats.",
         
         // Bodyweight/Calisthenics
@@ -1402,7 +1402,7 @@
         // Resistance training
         "Light Dumbbell Work": "Various exercises with 5-15 lb dumbbells. Curls, presses, rows. Focus on form and consistency over weight.",
         "Step-ups": "Step up onto elevated surface, one leg at a time. Drive through heel. Functional leg exercise, scalable height.",
-        "Wall Sits": "Back against wall, slide down to 90° knee angle. Hold position. Builds leg endurance and mental toughness.",
+        "Wall Sits": "Back against wall, slide down to 90Â° knee angle. Hold position. Builds leg endurance and mental toughness.",
         "Resistance Bands": "Elastic bands providing variable resistance. Portable and versatile. Great for warm-ups, rehab, or full workouts.",
         "Dumbbell Press": "Lying or seated, press dumbbells overhead. Shoulder or chest exercise depending on angle. Build pressing strength.",
         "Assisted Pull-ups": "Pull-ups with band assistance or machine support. Build toward full pull-up. Essential back exercise.",

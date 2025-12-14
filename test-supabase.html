@@ -53,10 +53,10 @@
       try {
         const { data, error } = await supabase.from('profiles').select('count');
         if (error) throw error;
-        log('✅ Connection successful!', 'success');
+        log('âœ… Connection successful!', 'success');
         logJSON('Response', data);
       } catch (err) {
-        log('❌ Connection failed: ' + err.message, 'error');
+        log('âŒ Connection failed: ' + err.message, 'error');
         logJSON('Error details', err);
       }
     }
@@ -67,7 +67,7 @@
         const { data, error } = await supabase.from('profiles').select('*').limit(1);
         if (error) {
           if (error.code === '42P01') {
-            log('❌ Table "profiles" does not exist! You need to create it.', 'error');
+            log('âŒ Table "profiles" does not exist! You need to create it.', 'error');
             log('Run this SQL in Supabase SQL Editor:', 'info');
             const sql = `
 create table if not exists profiles (
@@ -96,11 +96,11 @@ create policy "Users can update own profile"
             throw error;
           }
         } else {
-          log('✅ Table "profiles" exists!', 'success');
+          log('âœ… Table "profiles" exists!', 'success');
           logJSON('Sample data', data);
         }
       } catch (err) {
-        log('❌ Error checking tables: ' + err.message, 'error');
+        log('âŒ Error checking tables: ' + err.message, 'error');
         logJSON('Error details', err);
       }
     }
@@ -126,7 +126,7 @@ create policy "Users can update own profile"
 
         if (error) throw error;
 
-        log('✅ Signup successful!', 'success');
+        log('âœ… Signup successful!', 'success');
         logJSON('Signup data', data);
 
         if (data.user && data.session) {
@@ -142,18 +142,18 @@ create policy "Users can update own profile"
             }]);
 
           if (profileError) {
-            log('❌ Profile insert failed: ' + profileError.message, 'error');
+            log('âŒ Profile insert failed: ' + profileError.message, 'error');
             logJSON('Profile error details', profileError);
           } else {
-            log('✅ Profile created successfully!', 'success');
+            log('âœ… Profile created successfully!', 'success');
           }
         } else if (data.user && !data.session) {
-          log('⚠️ User created but no session (email confirmation required)', 'info');
+          log('âš ï¸ User created but no session (email confirmation required)', 'info');
           log('Profile will need to be created via database trigger or after email confirmation', 'info');
         }
 
       } catch (err) {
-        log('❌ Signup failed: ' + err.message, 'error');
+        log('âŒ Signup failed: ' + err.message, 'error');
         logJSON('Error details', err);
       }
     }
@@ -173,10 +173,10 @@ create policy "Users can update own profile"
 
         if (error) throw error;
 
-        log(`✅ Found ${data.length} profiles`, 'success');
+        log(`âœ… Found ${data.length} profiles`, 'success');
         logJSON('Profiles', data);
       } catch (err) {
-        log('❌ Error listing profiles: ' + err.message, 'error');
+        log('âŒ Error listing profiles: ' + err.message, 'error');
         logJSON('Error details', err);
       }
     }

@@ -93,7 +93,7 @@
         if (error) {
           console.error('Supabase error:', error);
           if (error.message.includes('meal_logs') || error.code === '42P01' || error.code === 'PGRST204') {
-            alert('⚠️ DATABASE SETUP REQUIRED\n\n' +
+            alert('âš ï¸ DATABASE SETUP REQUIRED\n\n' +
                   'The meal_logs table does not exist in your Supabase database.\n\n' +
                   'STEPS TO FIX:\n' +
                   '1. Go to: https://supabase.com/dashboard/project/pncfzxuecxzcdyxdwuok/sql/new\n' +
@@ -416,7 +416,7 @@
                 ${i.remarks ? `<div class="muted" style="font-size:0.85rem;margin-top:4px">${escapeHtml(i.remarks)}</div>` : ''}
               </div>
               <div style="display:flex;gap:8px;align-items:center">
-                <div class="muted" style="font-size:0.85rem">Protein: ${i.protein}g · Carbs: ${i.carbs}g · Fat: ${i.fat}g · Calories: ${i.cal} kcal</div>
+                <div class="muted" style="font-size:0.85rem">Protein: ${i.protein}g Â· Carbs: ${i.carbs}g Â· Fat: ${i.fat}g Â· Calories: ${i.cal} kcal</div>
                 <button class="btn danger delete-meal" data-id="${i.id}" title="Delete meal" aria-label="Delete meal">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;display:inline-block">
                     <polyline points="3 6 5 6 21 6"></polyline>
@@ -492,7 +492,7 @@
       if (protAchieved && carbAchieved && fatAchieved && calAchieved) {
         successMsg.style.display = 'block';
         successMsg.className = 'target-success';
-        successMsg.textContent = 'You\'ve hit all your daily targets! 🎉';
+        successMsg.textContent = 'You\'ve hit all your daily targets! ðŸŽ‰';
       } else {
         successMsg.style.display = 'none';
       }
