@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriFit Signup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    .navbar, .navbar *{font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial !important}
+  </style>
+  <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img class="navbar-logo" src="NutriFit.png" alt="NutriFit Logo">
+      NutriFit
+    </div>
+    <div class="navbar-links-container">
+      <a href="#home" onclick="window.location.href='Main.html'; return false;">Home</a>
+      <a href="#meal" onclick="window.location.href='Meal.html'; return false;">Meal</a>
+      <a href="#workout" onclick="window.location.href='Workout.html'; return false;">Workout</a>
+      <a href="#about" onclick="window.location.href='About us.html'; return false;">About us</a>
+      <a href="#login" onclick="window.location.href='signup.html'; return false;">Sign Up</a>
+    </div>
+  </nav>
+  <!-- background video for login / signup pages -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="loginsignup.mp4" type="video/mp4">
+  </video>
+  <div id="bg-video-overlay"></div>
+
+  <div class="container">
+    <div class="left-panel">
+      <div class="left-overlay">
+        <h3>Join NutriFit</h3>
+        <p>Personalized plans to fuel your goals.</p>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="login-card">
+        <h2>Create account</h2>
+        <p class="muted">Join NutriFit — it only takes a minute.</p>
+
+        <form class="login-form" action="#" method="post" novalidate>
+          <label class="field">
+            <span class="label-text">First name</span>
+            <input type="text" name="first" placeholder="FIRST" required />
+          </label>
+
+          <label class="field">
+            <span class="label-text">Last name</span>
+            <input type="text" name="last" placeholder="LAST" required />
+          </label>
+
+          <label class="field">
+            <span class="label-text">Email</span>
+            <input type="email" name="email" placeholder="EMAIL" required />
+          </label>
+
+          <label class="field">
+            <span class="label-text">Password</span>
+            <input type="password" name="password" placeholder="PASSWORD" required />
+          </label>
+
+          <label class="remember"><input type="checkbox" name="agree" required /> I agree to the <a href="#" id="terms-link">terms &amp; conditions</a></label>
+
+          <button class="btn-primary" type="submit">Create account</button>
+        </form>
+
+        <p class="signup-prompt">Already have an account? <a href="login.html">Sign in</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="terms-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Terms & Conditions</h2>
+      <p style="margin-top:1rem; line-height:1.6;">
+        By creating an account with NutriFit, you agree to our use of your personal data to provide personalized health and fitness services. You also agree not to misuse the platform, share false information, or violate any applicable laws. NutriFit is not a substitute for professional medical advice. Always consult your physician before beginning any fitness program.
+      </p>
+    </div>
+  </div>
+
+  <script src="../JAVA/signup.js"></script>
+</body>
+</html>
