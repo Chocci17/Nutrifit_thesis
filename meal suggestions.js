@@ -2036,7 +2036,7 @@ const mealPlans = [
         }
       }
       
-      window.location.href = 'Main.html';
+      window.location.href = 'index.html';
     }
 
     // Community Live Toggle

@@ -319,7 +319,7 @@
         }
       }
       
-      window.location.href = 'Main.html';
+      window.location.href = 'index.html';
     }
 
     // Load user data from Supabase and display it
