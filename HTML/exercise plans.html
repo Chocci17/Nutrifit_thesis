@@ -45,41 +45,19 @@
 
   <!-- Top Navigation Bar -->
   <div class="navbar">
-    <!-- Logo -->
-    <div class="navbar-brand" onclick="toggleSidebar()">
-      <img class="navbar-logo" src="NutriFit.png" alt="NutriFit Logo">
-      NutriFit
-    </div>
-
-    <!-- Navigation Tabs -->
-    <div class="navbar-links-container">
-      <a href="#meal-log" onclick="navigateTo('Meal log.html'); return false;">Meal Log</a>
-      <a href="#bmi-progress" onclick="navigateTo('BMI.html'); return false;">BMI Tracker</a>
-      <a href="#exercise-plans" onclick="navigateTo('exercise plans.html'); return false;">Dynamic Exercise Plans</a>
-      <a href="#meal-suggestions" onclick="navigateTo('meal suggestions.html'); return false;">Meal Suggestions</a>
-      <a href="#nutrifit-analytics" onclick="navigateTo('Nutrifit Analytics.html'); return false;">Nutrifit Analytics</a>
-    </div>
-  </div>
-
-  <div class="container">
-    <h1>Dynamic Exercise Plans</h1>
-    <p class="subtitle">Choose your fitness goal and get personalized workout plans</p>
-
-    <!-- Difficulty Filters -->
-    <div class="filters">
-      <button class="filter-btn active" onclick="filterPlans('all')">All Levels</button>
-      <button class="filter-btn" onclick="filterPlans('Beginner')">Beginner</button>
-      <button class="filter-btn" onclick="filterPlans('Intermediate')">Intermediate</button>
-      <button class="filter-btn" onclick="filterPlans('Advanced')">Advanced</button>
-    </div>
-
-    <!-- Exercise Plans Grid -->
-    <div class="plans-grid" id="plansGrid">
-    </div>
-  </div>
-
-  <!-- Modal for Plan Details -->
-  <div id="planModal" class="modal">
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Redirecting…</title>
+        <meta http-equiv="refresh" content="0;url=/index.html#exercise_plans.html">
+        <script>location.replace('/index.html#exercise_plans.html');</script>
+      </head>
+      <body>
+        Redirecting to <a href="/index.html#exercise_plans.html">home</a>…
+      </body>
+    </html>
     <div class="modal-content">
       <div class="modal-header">
         <button class="modal-close" onclick="closeModal()">&times;</button>

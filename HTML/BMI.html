@@ -46,41 +46,19 @@
 
   <!-- Top Navigation Bar -->
   <div class="navbar">
-    <!-- Logo -->
-    <div class="navbar-brand" onclick="toggleSidebar()">
-      <img class="navbar-logo" src="NutriFit.png" alt="NutriFit Logo">
-      NutriFit
-    </div>
-
-    <!-- Navigation Tabs -->
-    <div class="navbar-links-container">
-      <a href="#meal-log" onclick="navigateTo('Meal log.html'); return false;">Meal Log</a>
-      <a href="#bmi-progress" onclick="navigateTo('BMI.html'); return false;">BMI Tracker</a>
-      <a href="#exercise-plans" onclick="navigateTo('exercise plans.html'); return false;">Dynamic Exercise Plans</a>
-      <a href="#meal-suggestions" onclick="navigateTo('meal suggestions.html'); return false;">Meal Suggestions</a>
-      <a href="#nutrifit-analytics" onclick="navigateTo('Nutrifit Analytics.html'); return false;">Nutrifit Analytics</a>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="main-grid">
-      <!-- Calculator Card -->
-      <div class="card">
-        <h2>BMI Calculator</h2>
-        
-        <div class="unit-toggle">
-          <button class="unit-btn active" onclick="setUnit('metric')">Metric</button>
-          <button class="unit-btn" onclick="setUnit('imperial')">Imperial</button>
-        </div>
-
-        <form id="bmiForm">
-          <div class="form-group">
-            <label for="recordDate">Record Date</label>
-            <input type="date" id="recordDate" required>
-          </div>
-
-          <div class="form-group">
-            <label for="weight">Weight (<span id="weightUnit">kg</span>)</label>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Redirecting…</title>
+        <meta http-equiv="refresh" content="0;url=/index.html#BMI.html">
+        <script>location.replace('/index.html#BMI.html');</script>
+      </head>
+      <body>
+        Redirecting to <a href="/index.html#BMI.html">home</a>…
+      </body>
+    </html>
             <input type="number" id="weight" step="0.1" placeholder="Enter your weight" required>
           </div>
 

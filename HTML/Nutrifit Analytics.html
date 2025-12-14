@@ -1,63 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NutriFit Analytics</title>
-  <link rel="stylesheet" href="../CSS/NutriFit Analytics.css">
-</head>
-<body>
-  <!-- Background Video -->
-  <video id="bg-video" autoplay muted loop playsinline>
-    <source src="back_ground.mp4" type="video/mp4">
-  </video>
-
-  <!-- Sidebar Overlay -->
-  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
-  
-  <!-- Dropdown Sidebar -->
-  <div class="dropdown-sidebar" id="dropdownSidebar">
-    <div class="sidebar-item" onclick="navigateTo('Profile.html')">
-      <div class="sidebar-item-icon">👤</div>
-      <div>Profile</div>
-    </div>
-    
-    <div class="sidebar-divider"></div>
-    
-    <div class="sidebar-item" onclick="openTermsModal()">
-      <div class="sidebar-item-icon">📄</div>
-      <div>Terms and Conditions</div>
-    </div>
-    
-    <div class="sidebar-item" onclick="openAboutModal()">
-      <div class="sidebar-item-icon">ℹ️</div>
-      <div>About</div>
-    </div>
-    
-    <div class="sidebar-divider"></div>
-    
-    <div class="sidebar-item" onclick="logout()" style="color: #ef4444;">
-      <div class="sidebar-item-icon">🚪</div>
-      <div>Log Out</div>
-    </div>
-  </div>
-
-  <!-- Top Navigation Bar -->
-  <div class="navbar">
-    <div class="navbar-brand" onclick="toggleSidebar()">
-      <img class="navbar-logo" src="NutriFit.png" alt="NutriFit Logo">
-      NutriFit
-    </div>
-
-    <div class="navbar-links-container">
-      <a href="#meal-log" onclick="navigateTo('Meal log.html'); return false;">Meal Log</a>
-      <a href="#bmi-progress" onclick="navigateTo('BMI.html'); return false;">BMI Tracker</a>
-      <a href="#exercise-plans" onclick="navigateTo('exercise plans.html'); return false;">Dynamic Exercise Plans</a>
-      <a href="#meal-suggestions" onclick="navigateTo('meal suggestions.html'); return false;">Meal Suggestions</a>
-      <a href="#nutrifit-analytics" onclick="navigateTo('Nutrifit Analytics.html'); return false;">Nutrifit Analytics</a>
-    </div>
-  </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0;url=/index.html#Nutrifit_Analytics.html">
+    <script>location.replace('/index.html#Nutrifit_Analytics.html');</script>
+  </head>
+  <body>
+    Redirecting to <a href="/index.html#Nutrifit_Analytics.html">home</a>…
+  </body>
+</html>
 
   <div class="container">
     <h1 class="page-title">Nutrifit Analytics Dashboard</h1>
