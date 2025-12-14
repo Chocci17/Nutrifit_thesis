@@ -25,11 +25,11 @@
       NutriFit
     </div>
     <div class="navbar-links-container">
-      <a href="#home">Home</a>
-      <a href="#meal" onclick="window.location.href='Meal.html'; return false;">Meal</a>
-      <a href="#workout" onclick="window.location.href='Workout.html'; return false;">Workout</a>
-      <a href="#about" onclick="window.location.href='About us.html'; return false;">About us</a>
-      <a href="#login" onclick="window.location.href='signup.html'; return false;">Sign Up</a>
+      <a href="#home" data-page="home">Home</a>
+      <a href="#meal" data-page="Meal.html">Meal</a>
+      <a href="#workout" data-page="Workout.html">Workout</a>
+      <a href="#about" data-page="About us.html">About us</a>
+      <a href="#signup" data-page="signup.html">Sign Up</a>
     </div>
   </nav>
 
@@ -131,6 +131,120 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    // SPA loader: fetch HTML pages and inject into #spa-content, executing their scripts and adding styles.
+    (function(){
+      const pages = [
+        {id:'home', file:null},
+        {id:'Meal.html', file:'Meal.html'},
+        {id:'Meal log.html', file:'Meal log.html'},
+        {id:'Workout.html', file:'Workout.html'},
+        {id:'About us.html', file:'About us.html'},
+        {id:'signup.html', file:'signup.html'},
+        {id:'login.html', file:'login.html'},
+        {id:'Profile.html', file:'Profile.html'},
+        {id:'Nutrifit Analytics.html', file:'Nutrifit Analytics.html'},
+        {id:'meal suggestions.html', file:'meal suggestions.html'},
+        {id:'BMI.html', file:'BMI.html'},
+        {id:'exercise plans.html', file:'exercise plans.html'},
+        {id:'test-supabase.html', file:'test-supabase.html'}
+      ];
+
+      const content = document.createElement('div');
+      content.id = 'spa-content';
+      document.body.insertBefore(content, document.getElementById('profileSetupModal'));
+
+      // helper: sanitize filename key
+      function slug(f){ return f ? f.replace(/\s+/g,'_').replace(/\./g,'') : 'home'; }
+
+      async function loadPage(file){
+        if (!file) return; // home uses existing hero
+        const key = slug(file);
+        let container = document.getElementById('page-'+key);
+        if (!container){
+          container = document.createElement('section');
+          container.id = 'page-'+key;
+          container.className = 'spa-page';
+          content.appendChild(container);
+        }
+        // if already loaded, just show
+        if (container.dataset.loaded === 'true') return showOnly(container.id);
+
+        try{
+          const res = await fetch(file);
+          if (!res.ok) throw new Error('Fetch failed: '+res.status);
+          const html = await res.text();
+          // extract head links/styles
+          const headMatches = html.match(/<head[\s\S]*?<\/head>/i);
+          if (headMatches){
+            const headContent = headMatches[0];
+            // add link rel=stylesheet tags
+            const linkRe = /<link[^>]+rel=["']stylesheet["'][^>]*>/ig;
+            let m;
+            while ((m = linkRe.exec(headContent)) !== null){
+              const tmp = document.createElement('template'); tmp.innerHTML = m[0];
+              const link = tmp.content.firstChild;
+              const href = link.getAttribute('href');
+              if (href && !document.querySelector('link[href="'+href+'"]')){
+                const el = document.createElement('link'); el.rel='stylesheet'; el.href=href; document.head.appendChild(el);
+              }
+            }
+          }
+
+          // extract body content
+          const bodyMatch = html.match(/<body[\s\S]*?>([\s\S]*)<\/body>/i);
+          const bodyHtml = bodyMatch ? bodyMatch[1] : html;
+          container.innerHTML = bodyHtml;
+
+          // run scripts from fetched HTML
+          const scriptRe = /<script([^>]*)>([\s\S]*?)<\/script>/ig;
+          let sm;
+          while ((sm = scriptRe.exec(html)) !== null){
+            const attrs = sm[1]; const inline = sm[2];
+            const srcMatch = attrs.match(/src=["']([^"']+)["']/i);
+            if (srcMatch){
+              const s = document.createElement('script'); s.src = srcMatch[1]; s.defer = false; document.body.appendChild(s);
+            } else if (inline && inline.trim()){
+              const s = document.createElement('script'); s.textContent = inline; document.body.appendChild(s);
+            }
+          }
+
+          container.dataset.loaded = 'true';
+          showOnly(container.id);
+        }catch(err){
+          container.innerHTML = '<p style="color:darkred">Failed to load page: '+file+' ('+err.message+')</p>';
+          showOnly(container.id);
+        }
+      }
+
+      function showOnly(id){
+        document.querySelectorAll('.spa-page').forEach(el=> el.style.display = (el.id===id)?'block':'none');
+        // hide hero when not home
+        const isHome = id === 'page-home' || id === undefined || id === null;
+        const hero = document.querySelector('.hero-section');
+        if (hero) hero.style.display = isHome ? 'block' : 'none';
+      }
+
+      // set up nav clicks
+      document.querySelectorAll('.navbar-links-container a[data-page]').forEach(a=>{
+        a.addEventListener('click', (e)=>{
+          e.preventDefault(); const file = a.getAttribute('data-page');
+          if (!file || file==='home'){
+            showOnly(); location.hash = 'home';
+          } else { loadPage(file); location.hash = file.replace(/\s+/g,'_'); }
+        });
+      });
+
+      // on load, check hash
+      window.addEventListener('load', ()=>{
+        const h = decodeURIComponent(location.hash.replace('#',''));
+        if (!h || h==='home') return; // leave hero
+        // map hash back to filename (underscores->spaces)
+        const file = h.indexOf('.html')>-1 ? h.replace(/_/g,' ') : null;
+        if (file) loadPage(file);
+      });
+    })();
+  </script>
   <script src="main.js"></script>
 </body>
 </html>
