@@ -1,0 +1,218 @@
+/* Styles extracted from original inline CSS */
+
+body {
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  background-color: #1C352D;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+#bg-video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  z-index: -1;
+}
+
+ .navbar {
+      position: relative;
+      z-index: 6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .75rem 1.5rem;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+      backdrop-filter: blur(6px);
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      color: white;
+    }
+    .navbar-logo {
+      width: 44px;
+      height: 44px;
+    }
+    .navbar-links-container a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.9);
+      padding: .35rem .6rem;
+      border-radius: 6px;
+    }
+    .navbar-links-container a:hover {
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+.content {
+  max-width: 1400px;
+  margin: 0.75rem auto;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.meal-containers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4.5rem;
+  row-gap: 2.5rem;
+  gap: 4.5rem 2.5rem;
+  margin-top: 2rem;
+  justify-items: center;
+  align-items: start;
+  position: relative;
+  z-index: 0;
+}
+
+.meal-container {
+  width: 100%;
+  aspect-ratio: 9 / 19;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 1;
+}
+
+.meal-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(103, 192, 144, 0.3);
+  z-index: 10;
+}
+
+.meal-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  pointer-events: none;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.meal-caption {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%);
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+  flex-shrink: 0;
+}
+
+.meal-caption .title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  user-select: none;
+}
+
+.meal-caption .btn {
+  background-color: #67C090;
+  border: none;
+  color: #064232;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.meal-caption .btn:hover {
+  background-color: #5ab07a;
+}
+
+.meal-container-1 { grid-column: 1; grid-row: 1; }
+.meal-container-2 { grid-column: 2; grid-row: 1; }
+.meal-container-3 { grid-column: 3; grid-row: 1; }
+.meal-container-4 { grid-column: 4; grid-row: 1; }
+
+.meal-dropdown-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  background: rgba(6, 66, 50, 0.95);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 12px 12px 0 0;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: max-height 300ms ease, opacity 300ms ease;
+  z-index: 20;
+}
+
+.meal-dropdown-panel.show {
+  max-height: 350px;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition: max-height 300ms ease, opacity 300ms ease, transform 300ms ease;
+}
+
+.meal-dropdown-panel h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #67C090;
+  user-select: none;
+}
+
+.meal-dropdown-panel p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+  user-select: text;
+}
+
+.meal-dropdown-panel .btn {
+  background-color: #67C090;
+  border: none;
+  color: #064232;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+
+.meal-dropdown-panel .btn:hover {
+  background-color: #5ab07a;
+}

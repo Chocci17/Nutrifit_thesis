@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  background-color: #ccd5d2;
+  color: white;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+ .navbar {
+      position: relative;
+      z-index: 6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .75rem 1.5rem;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+      backdrop-filter: blur(6px);
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      color: white;
+    }
+    .navbar-logo {
+      width: 44px;
+      height: 44px;
+    }
+    .navbar-links-container a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.9);
+      padding: .35rem .6rem;
+      border-radius: 6px;
+    }
+    .navbar-links-container a:hover {
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+.content {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: rgba(61, 85, 72, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(103, 192, 144, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-color: #67C090;
+}
+
+.team-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #67C090;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.team-card strong {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  color: #67C090;
+  margin: 0;
+}
+
+.cta-link {
+  color: #67C090;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+}
