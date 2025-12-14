@@ -1,10 +1,10 @@
-const mealPlans = [
+﻿const mealPlans = [
       // WEIGHT LOSS MEALS
       {
         title: "Lugaw with Itlog (Rice Porridge with Egg)",
         category: "breakfast",
-        description: "🔥 WEIGHT LOSS | Filipino rice porridge with boiled egg and vegetables - filling, low-cost, and under 200 calories.",
-        image: "../Picture/Lugaw with Itlog.jpg",
+        description: "ðŸ”¥ WEIGHT LOSS | Filipino rice porridge with boiled egg and vegetables - filling, low-cost, and under 200 calories.",
+        image: "../Picture/Lugaw with Itlog.jfif",
         prepTime: "15 min",
         calories: "195",
         protein: "10g",
@@ -21,7 +21,7 @@ const mealPlans = [
           "Salt and pepper"
         ],
         steps: [
-          "Sauté garlic, onion, and ginger in a pot",
+          "SautÃ© garlic, onion, and ginger in a pot",
           "Add rice and water, bring to boil",
           "Simmer for 20-30 minutes, stirring occasionally until thick",
           "Season with fish sauce, salt, and pepper",
@@ -30,7 +30,7 @@ const mealPlans = [
         ],
         tips: [
           "Rice porridge keeps you full for hours",
-          "Very budget-friendly - costs less than ₱30 per serving",
+          "Very budget-friendly - costs less than â‚±30 per serving",
           "Add more water if you prefer thinner consistency",
           "Perfect comfort food that supports weight loss"
         ]
@@ -38,7 +38,7 @@ const mealPlans = [
       {
         title: "Sinigang na Isda (Tamarind Fish Soup)",
         category: "lunch",
-        description: "🔥 WEIGHT LOSS | Tangy Filipino soup with fish and vegetables - low-calorie, high protein, and very affordable.",
+        description: "ðŸ”¥ WEIGHT LOSS | Tangy Filipino soup with fish and vegetables - low-calorie, high protein, and very affordable.",
         image: "../Picture/sinigang na isda.webp",
         prepTime: "25 min",
         calories: "250",
@@ -66,7 +66,7 @@ const mealPlans = [
         tips: [
           "Very low in calories but filling due to vegetables",
           "Fish is affordable protein source in the Philippines",
-          "Costs around ₱100-150 for 2 servings",
+          "Costs around â‚±100-150 for 2 servings",
           "The sourness helps with digestion and fat metabolism"
         ]
       },
@@ -75,8 +75,8 @@ const mealPlans = [
       {
         title: "Beef Tapa with Garlic Rice and Eggs",
         category: "breakfast",
-        description: "💪 MUSCLE GAIN | Classic Filipino breakfast with marinated beef, fried rice, and eggs - high protein for muscle building.",
-        image: "../Picture/filipino-beef-tapa-tapsilog-0.jpg",
+        description: "ðŸ’ª MUSCLE GAIN | Classic Filipino breakfast with marinated beef, fried rice, and eggs - high protein for muscle building.",
+        image: "../Picture/filipino-beef-tapa-tapsilog-0.jfif",
         prepTime: "20 min + marinating",
         calories: "620",
         protein: "42g",
@@ -103,7 +103,7 @@ const mealPlans = [
         ],
         tips: [
           "Beef provides complete protein and creatine for muscle gains",
-          "Costs around ₱150-200 per serving",
+          "Costs around â‚±150-200 per serving",
           "Perfect post-workout meal with high protein and carbs",
           "Can substitute with pork or chicken for budget option"
         ]
@@ -111,8 +111,8 @@ const mealPlans = [
       {
         title: "Adobong Manok with Extra Rice (Chicken Adobo)",
         category: "lunch",
-        description: "💪 MUSCLE GAIN | Filipino chicken adobo with generous rice serving - high protein, flavorful, and affordable.",
-        image: "../Picture/Chicken-Adobo-RLM-Article-Image.jpg",
+        description: "ðŸ’ª MUSCLE GAIN | Filipino chicken adobo with generous rice serving - high protein, flavorful, and affordable.",
+        image: "../Picture/Chicken-Adobo-RLM-Article-Image.jfif",
         prepTime: "40 min",
         calories: "680",
         protein: "48g",
@@ -131,7 +131,7 @@ const mealPlans = [
         ],
         steps: [
           "Marinate chicken in soy sauce, vinegar, garlic, bay leaves, peppercorns for 30 min",
-          "Heat oil in pot, sauté garlic from marinade",
+          "Heat oil in pot, sautÃ© garlic from marinade",
           "Add chicken and brown all sides",
           "Pour marinade and water, bring to boil",
           "Simmer for 30-40 minutes until chicken is tender",
@@ -140,7 +140,7 @@ const mealPlans = [
         ],
         tips: [
           "Chicken thighs provide more calories and protein than breast",
-          "Very affordable - costs around ₱200-250 for 2 servings",
+          "Very affordable - costs around â‚±200-250 for 2 servings",
           "Perfect for meal prep - tastes better the next day",
           "High protein and carbs support muscle growth"
         ]
@@ -150,7 +150,7 @@ const mealPlans = [
       {
         title: "Tapsilog - Beef Tapa, Sinangag, Itlog",
         category: "breakfast",
-        description: "⬆️ WEIGHT GAIN | Ultimate Filipino breakfast combo - beef tapa, fried rice, and eggs for maximum calories.",
+        description: "â¬†ï¸ WEIGHT GAIN | Ultimate Filipino breakfast combo - beef tapa, fried rice, and eggs for maximum calories.",
         image: "../food name/Tapsilog.webp",
         prepTime: "25 min",
         calories: "820",
@@ -177,7 +177,7 @@ const mealPlans = [
         ],
         tips: [
           "High-calorie breakfast perfect for bulking",
-          "Costs around ₱150-180 per serving",
+          "Costs around â‚±150-180 per serving",
           "Can substitute with pork (tocilog) or chicken (chicksilog)",
           "Add extra rice for more calories"
         ]
@@ -185,8 +185,8 @@ const mealPlans = [
       {
         title: "Pork Sisig with Extra Rice and Egg",
         category: "dinner",
-        description: "⬆️ WEIGHT GAIN | Sizzling pork sisig with egg and generous rice - calorie-dense Filipino favorite.",
-        image: "../Picture/pork sisig with rice.jpg",
+        description: "â¬†ï¸ WEIGHT GAIN | Sizzling pork sisig with egg and generous rice - calorie-dense Filipino favorite.",
+        image: "../Picture/pork sisig with rice.jfif",
         prepTime: "40 min",
         calories: "880",
         protein: "52g",
@@ -206,7 +206,7 @@ const mealPlans = [
         steps: [
           "Boil pork until tender, then grill until crispy",
           "Chop grilled pork into small pieces",
-          "Sauté garlic and onion in a hot pan",
+          "SautÃ© garlic and onion in a hot pan",
           "Add chopped pork, soy sauce, and calamansi",
           "Add green chili and season with pepper",
           "Top with raw egg, serve on sizzling plate",
@@ -214,7 +214,7 @@ const mealPlans = [
         ],
         tips: [
           "Very high in calories and protein for weight gain",
-          "Costs around ₱200-250 for 2 servings",
+          "Costs around â‚±200-250 for 2 servings",
           "Can use leftover lechon (roasted pig) for easier prep",
           "Perfect for those who need extra calories to bulk up"
         ]
@@ -224,7 +224,7 @@ const mealPlans = [
       {
         title: "Grilled Bangus (Milkfish) with Brown Rice",
         category: "dinner",
-        description: "🏃 PHYSICALLY FIT | Grilled milkfish with vegetables and brown rice - balanced Filipino meal for active lifestyles.",
+        description: "ðŸƒ PHYSICALLY FIT | Grilled milkfish with vegetables and brown rice - balanced Filipino meal for active lifestyles.",
         image: "../food name/grilledbangus.webp",
         prepTime: "30 min",
         calories: "480",
@@ -251,7 +251,7 @@ const mealPlans = [
         ],
         tips: [
           "Bangus is affordable fish rich in omega-3 fatty acids",
-          "Costs around ₱120-150 per serving",
+          "Costs around â‚±120-150 per serving",
           "Brown rice provides more fiber than white rice",
           "Perfect balanced meal for maintaining fitness"
         ]
@@ -259,8 +259,8 @@ const mealPlans = [
       {
         title: "Chicken Adobo with Vegetables",
         category: "lunch",
-        description: "🏃 PHYSICALLY FIT | Classic chicken adobo with added vegetables - protein-rich, balanced, and budget-friendly.",
-        image: "../Picture/chicken adobo with vege.jpg",
+        description: "ðŸƒ PHYSICALLY FIT | Classic chicken adobo with added vegetables - protein-rich, balanced, and budget-friendly.",
+        image: "../Picture/chicken adobo with vege.jfif",
         prepTime: "40 min",
         calories: "450",
         protein: "42g",
@@ -288,7 +288,7 @@ const mealPlans = [
         ],
         tips: [
           "Adding vegetables increases fiber and nutrients",
-          "Very affordable - around ₱180-220 for 3 servings",
+          "Very affordable - around â‚±180-220 for 3 servings",
           "Perfect balance of protein, carbs, and vegetables",
           "Great for active individuals and athletes"
         ]
@@ -296,7 +296,7 @@ const mealPlans = [
       {
         title: "Grilled Tilapia with Ensaladang Talong",
         category: "lunch",
-        description: "🏃 PHYSICALLY FIT | Grilled tilapia with eggplant salad - light, protein-rich, and very affordable Filipino meal.",
+        description: "ðŸƒ PHYSICALLY FIT | Grilled tilapia with eggplant salad - light, protein-rich, and very affordable Filipino meal.",
         image: "../Picture/grilled tilapia with ensaladang talong.png",
         prepTime: "25 min",
         calories: "380",
@@ -323,7 +323,7 @@ const mealPlans = [
         ],
         tips: [
           "Tilapia is one of the most affordable fish in Philippines",
-          "Costs only ₱80-100 per serving",
+          "Costs only â‚±80-100 per serving",
           "High protein, low fat - perfect for fitness goals",
           "Eggplant salad adds fiber and vitamins"
         ]
@@ -333,8 +333,8 @@ const mealPlans = [
       {
         title: "Boiled Kamote (Sweet Potato)",
         category: "snack",
-        description: "🏃 PHYSICALLY FIT | Simple boiled sweet potato - natural energy, fiber-rich, and costs only ₱10-15.",
-        image: "../food name/kamoteque.jpeg",
+        description: "ðŸƒ PHYSICALLY FIT | Simple boiled sweet potato - natural energy, fiber-rich, and costs only â‚±10-15.",
+        image: "../food name/kamoteque.jfif",
         prepTime: "20 min",
         calories: "180",
         protein: "4g",
@@ -354,7 +354,7 @@ const mealPlans = [
           "Peel and eat warm"
         ],
         tips: [
-          "Extremely budget-friendly - ₱10-15 per serving",
+          "Extremely budget-friendly - â‚±10-15 per serving",
           "Provides slow-release energy for workouts",
           "High in fiber, vitamins, and antioxidants",
           "Perfect pre-workout or afternoon snack"
@@ -363,8 +363,8 @@ const mealPlans = [
       {
         title: "Boiled Eggs (Itlog na Pula)",
         category: "snack",
-        description: "💪 MUSCLE GAIN | Simple boiled eggs - pure protein, portable, and costs only ₱30-40 for 3 eggs.",
-        image: "../food name/itlog na pula.jpeg",
+        description: "ðŸ’ª MUSCLE GAIN | Simple boiled eggs - pure protein, portable, and costs only â‚±30-40 for 3 eggs.",
+        image: "../food name/itlog na pula.jfif",
         prepTime: "12 min",
         calories: "210",
         protein: "18g",
@@ -384,7 +384,7 @@ const mealPlans = [
           "Peel and season with salt and pepper"
         ],
         tips: [
-          "Extremely affordable protein source - ₱10-12 per egg",
+          "Extremely affordable protein source - â‚±10-12 per egg",
           "Perfect portable snack for muscle building",
           "Eat 2-3 times daily for extra protein",
           "Can prepare batch of 10-12 eggs for the week"
@@ -393,7 +393,7 @@ const mealPlans = [
       {
         title: "Saging na Saba (Boiled Banana)",
         category: "snack",
-        description: "🔥 WEIGHT LOSS | Boiled plantain banana - natural sweetness, filling fiber, costs only ₱10-15.",
+        description: "ðŸ”¥ WEIGHT LOSS | Boiled plantain banana - natural sweetness, filling fiber, costs only â‚±10-15.",
         image: "../Picture/saing na saba.jfif",
         prepTime: "15 min",
         calories: "140",
@@ -412,7 +412,7 @@ const mealPlans = [
           "Peel and eat warm or cold"
         ],
         tips: [
-          "Very affordable - ₱5-8 per banana",
+          "Very affordable - â‚±5-8 per banana",
           "High in fiber to keep you full",
           "Natural sweetness satisfies sugar cravings",
           "Perfect healthy snack for weight loss"
@@ -421,9 +421,9 @@ const mealPlans = [
 
       // Additional WEIGHT LOSS MEALS
       {
-        title: "Ginisang Monggo (Sautéed Mung Bean Soup)",
+        title: "Ginisang Monggo (SautÃ©ed Mung Bean Soup)",
         category: "lunch",
-        description: "🔥 WEIGHT LOSS | Filipino mung bean soup with vegetables - high fiber, filling, and costs less than ₱50 per serving.",
+        description: "ðŸ”¥ WEIGHT LOSS | Filipino mung bean soup with vegetables - high fiber, filling, and costs less than â‚±50 per serving.",
         image: "https://images.pexels.com/photos/5638527/pexels-photo-5638527.jpeg?auto=compress&cs=tinysrgb&w=800",
         prepTime: "30 min",
         calories: "220",
@@ -443,8 +443,8 @@ const mealPlans = [
         ],
         steps: [
           "Boil mung beans in water until soft (20-25 minutes)",
-          "In another pan, sauté garlic, onion, and tomato",
-          "Add boiled monggo to the sautéed mixture",
+          "In another pan, sautÃ© garlic, onion, and tomato",
+          "Add boiled monggo to the sautÃ©ed mixture",
           "Add malunggay or spinach and ampalaya",
           "Season with fish sauce, salt, and pepper",
           "Simmer for 5 minutes, serve hot with small rice portion"
@@ -459,7 +459,7 @@ const mealPlans = [
       {
         title: "Pandesal with Peanut Butter",
         category: "breakfast",
-        description: "🏃 PHYSICALLY FIT | Classic Filipino bread roll with peanut butter - affordable breakfast with protein and carbs.",
+        description: "ðŸƒ PHYSICALLY FIT | Classic Filipino bread roll with peanut butter - affordable breakfast with protein and carbs.",
         image: "../Picture/pandesal.jfif",
         prepTime: "5 min",
         calories: "320",
@@ -478,7 +478,7 @@ const mealPlans = [
           "Serve with hot coffee or hot chocolate"
         ],
         tips: [
-          "Very affordable - pandesal costs ₱2-3 per piece",
+          "Very affordable - pandesal costs â‚±2-3 per piece",
           "Peanut butter adds protein and healthy fats",
           "Classic Filipino breakfast loved by all",
           "Perfect quick breakfast before work or school"
@@ -487,8 +487,8 @@ const mealPlans = [
       {
         title: "Pakbet (Pinakbet) - Vegetable Medley",
         category: "lunch",
-        description: "🔥 WEIGHT LOSS | Traditional Filipino vegetable dish with bagoong - very low calorie, high fiber, budget-friendly.",
-        image: "../Picture/pakbet.jpg",
+        description: "ðŸ”¥ WEIGHT LOSS | Traditional Filipino vegetable dish with bagoong - very low calorie, high fiber, budget-friendly.",
+        image: "../Picture/pakbet.jfif",
         prepTime: "20 min",
         calories: "180",
         protein: "8g",
@@ -506,7 +506,7 @@ const mealPlans = [
           "1 tablespoon cooking oil"
         ],
         steps: [
-          "Sauté garlic, onion, and tomatoes in oil",
+          "SautÃ© garlic, onion, and tomatoes in oil",
           "Add bagoong and stir for 1 minute",
           "Add kalabasa and water, simmer for 5 minutes",
           "Add sitaw, talong, and okra",
@@ -514,7 +514,7 @@ const mealPlans = [
           "Serve hot with small portion of rice"
         ],
         tips: [
-          "Very affordable - vegetables cost around ₱80-100 total",
+          "Very affordable - vegetables cost around â‚±80-100 total",
           "Low in calories but very filling due to fiber",
           "Can add small amount of pork or shrimp for protein",
           "Perfect for weight loss - nutrient-dense and satisfying"
@@ -523,7 +523,7 @@ const mealPlans = [
       {
         title: "Chicken Tinola with Extra Chicken",
         category: "lunch",
-        description: "💪 MUSCLE GAIN | Filipino ginger chicken soup with extra protein - warm, comforting, and muscle-building.",
+        description: "ðŸ’ª MUSCLE GAIN | Filipino ginger chicken soup with extra protein - warm, comforting, and muscle-building.",
         image: "../Picture/tinola.avif",
         prepTime: "35 min",
         calories: "480",
@@ -542,7 +542,7 @@ const mealPlans = [
           "1 tablespoon cooking oil"
         ],
         steps: [
-          "Sauté garlic, onion, and ginger in oil until fragrant",
+          "SautÃ© garlic, onion, and ginger in oil until fragrant",
           "Add chicken pieces and brown lightly",
           "Pour water and bring to boil",
           "Add green papaya and simmer 20-25 minutes until chicken is tender",
@@ -551,7 +551,7 @@ const mealPlans = [
           "Serve hot with rice"
         ],
         tips: [
-          "Very affordable - costs around ₱150-200 for 2 servings",
+          "Very affordable - costs around â‚±150-200 for 2 servings",
           "High protein from chicken supports muscle growth",
           "Ginger aids digestion and reduces inflammation",
           "Perfect comfort food that's also nutritious"
@@ -560,7 +560,7 @@ const mealPlans = [
       {
         title: "Sinigang na Baboy (Pork Tamarind Soup)",
         category: "dinner",
-        description: "💪 MUSCLE GAIN | Filipino pork soup with vegetables - high protein, savory-sour flavor, very affordable.",
+        description: "ðŸ’ª MUSCLE GAIN | Filipino pork soup with vegetables - high protein, savory-sour flavor, very affordable.",
         image: "../Picture/sinigang na baboy.jfif",
         prepTime: "45 min",
         calories: "550",
@@ -589,7 +589,7 @@ const mealPlans = [
         ],
         tips: [
           "Pork provides high protein and calories for muscle building",
-          "Very affordable - around ₱200-250 for 3 servings",
+          "Very affordable - around â‚±200-250 for 3 servings",
           "Perfect for meal prep - lasts 3-4 days refrigerated",
           "The sourness aids in better nutrient absorption"
         ]
@@ -597,8 +597,8 @@ const mealPlans = [
       {
         title: "Lechon Kawali with Rice and Atchara",
         category: "lunch",
-        description: "⬆️ WEIGHT GAIN | Crispy fried pork belly with rice - calorie-dense Filipino comfort food for bulking.",
-        image: "../food name/lechon-kawali.jpeg",
+        description: "â¬†ï¸ WEIGHT GAIN | Crispy fried pork belly with rice - calorie-dense Filipino comfort food for bulking.",
+        image: "../food name/lechon-kawali.jfif",
         prepTime: "60 min",
         calories: "900",
         protein: "38g",
@@ -624,7 +624,7 @@ const mealPlans = [
         ],
         tips: [
           "Extremely high in calories - perfect for weight gain",
-          "Costs around ₱250-300 for 2 servings",
+          "Costs around â‚±250-300 for 2 servings",
           "Can air-fry for slightly less oil",
           "Best eaten immediately while still crispy"
         ]
@@ -632,7 +632,7 @@ const mealPlans = [
       {
         title: "Sinigang na Hipon (Shrimp Tamarind Soup)",
         category: "lunch",
-        description: "🏃 PHYSICALLY FIT | Light yet satisfying shrimp sinigang - high protein, low calorie, with vegetables.",
+        description: "ðŸƒ PHYSICALLY FIT | Light yet satisfying shrimp sinigang - high protein, low calorie, with vegetables.",
         image: "../Picture/sinigang na hipon.avif",
         prepTime: "25 min",
         calories: "320",
@@ -661,7 +661,7 @@ const mealPlans = [
         ],
         tips: [
           "Shrimp is low-calorie, high-protein seafood",
-          "Costs around ₱180-220 for 2 servings",
+          "Costs around â‚±180-220 for 2 servings",
           "Perfect light meal for active individuals",
           "Vegetables add fiber and micronutrients"
         ]
@@ -669,7 +669,7 @@ const mealPlans = [
       {
         title: "Banana Cue (Fried Sweet Banana)",
         category: "snack",
-        description: "⬆️ WEIGHT GAIN | Caramelized banana skewers - sweet, calorie-dense, costs only ₱20-30.",
+        description: "â¬†ï¸ WEIGHT GAIN | Caramelized banana skewers - sweet, calorie-dense, costs only â‚±20-30.",
         image: "../Picture/banana cue.avif",
         prepTime: "15 min",
         calories: "380",
@@ -691,7 +691,7 @@ const mealPlans = [
           "Skewer 2 bananas per stick and serve"
         ],
         tips: [
-          "Very affordable street food - ₱10-15 per piece",
+          "Very affordable street food - â‚±10-15 per piece",
           "High in calories for easy weight gain",
           "Best eaten fresh and warm",
           "Popular Filipino merienda (snack)"
@@ -702,8 +702,8 @@ const mealPlans = [
       {
         title: "Tuyo and Brown Rice with Tomatoes",
         category: "breakfast",
-        description: "🔥 WEIGHT LOSS | Dried fish with brown rice and tomatoes - traditional Filipino breakfast, high protein, budget-friendly.",
-        image: "../food name/Tuyo and Brown rice with tomatoes.jpeg",
+        description: "ðŸ”¥ WEIGHT LOSS | Dried fish with brown rice and tomatoes - traditional Filipino breakfast, high protein, budget-friendly.",
+        image: "../food name/Tuyo and Brown rice with tomatoes.jfif",
         prepTime: "10 min",
         calories: "280",
         protein: "26g",
@@ -723,7 +723,7 @@ const mealPlans = [
           "Serve with vinegar-chili dip"
         ],
         tips: [
-          "Very affordable - tuyo costs ₱5-10 per piece",
+          "Very affordable - tuyo costs â‚±5-10 per piece",
           "High protein from dried fish",
           "Tomatoes add vitamins and freshness",
           "Classic Filipino breakfast that supports weight loss"
@@ -732,8 +732,8 @@ const mealPlans = [
       {
         title: "Grilled Pusit (Squid) with Rice",
         category: "dinner",
-        description: "🔥 WEIGHT LOSS | Grilled squid with vegetables - high protein, low fat, very affordable Filipino seafood.",
-        image: "../Picture/grilled pusit.jpg",
+        description: "ðŸ”¥ WEIGHT LOSS | Grilled squid with vegetables - high protein, low fat, very affordable Filipino seafood.",
+        image: "../Picture/grilled pusit.jfif",
         prepTime: "20 min",
         calories: "280",
         protein: "34g",
@@ -757,7 +757,7 @@ const mealPlans = [
           "Dip in vinegar-chili sauce"
         ],
         tips: [
-          "Squid is very affordable - ₱120-150 per 300g",
+          "Squid is very affordable - â‚±120-150 per 300g",
           "Extremely high in protein, almost no fat",
           "Don't overcook - squid should be tender",
           "Perfect low-calorie, high-protein dinner"
@@ -766,8 +766,8 @@ const mealPlans = [
       {
         title: "Turon (Banana Spring Roll)",
         category: "snack",
-        description: "⬆️ WEIGHT GAIN | Fried banana wrapped in spring roll - sweet, crispy, calorie-dense Filipino snack.",
-        image: "../food name/Turon-banana-lumpia-sweet-simple-vegan-8.jpeg",
+        description: "â¬†ï¸ WEIGHT GAIN | Fried banana wrapped in spring roll - sweet, crispy, calorie-dense Filipino snack.",
+        image: "../food name/Turon-banana-lumpia-sweet-simple-vegan-8.jfif",
         prepTime: "15 min",
         calories: "320",
         protein: "4g",
@@ -788,7 +788,7 @@ const mealPlans = [
           "Drain on paper towels and serve warm"
         ],
         tips: [
-          "Very affordable street food - ₱10-15 per piece",
+          "Very affordable street food - â‚±10-15 per piece",
           "High in calories perfect for weight gain",
           "Adding jackfruit gives authentic flavor",
           "Best eaten fresh and crispy"
@@ -799,8 +799,8 @@ const mealPlans = [
       {
         title: "Longganisa with Garlic Rice and Eggs",
         category: "breakfast",
-        description: "💪 MUSCLE GAIN | Filipino sweet sausage with fried rice and eggs - high protein, high calorie breakfast.",
-        image: "../Picture/longganisa with rice.jpg",
+        description: "ðŸ’ª MUSCLE GAIN | Filipino sweet sausage with fried rice and eggs - high protein, high calorie breakfast.",
+        image: "../Picture/longganisa with rice.jfif",
         prepTime: "20 min",
         calories: "650",
         protein: "38g",
@@ -823,7 +823,7 @@ const mealPlans = [
         ],
         tips: [
           "Longganisa provides high calories and protein",
-          "Costs around ₱80-120 for 6 pieces",
+          "Costs around â‚±80-120 for 6 pieces",
           "Perfect Filipino breakfast for muscle building",
           "Sweet longganisa from different regions have unique flavors"
         ]
@@ -831,7 +831,7 @@ const mealPlans = [
       {
         title: "Pork BBQ Skewers with Java Rice",
         category: "lunch",
-        description: "💪 MUSCLE GAIN | Filipino pork barbecue on sticks with garlic-turmeric rice - sweet, savory, and protein-rich.",
+        description: "ðŸ’ª MUSCLE GAIN | Filipino pork barbecue on sticks with garlic-turmeric rice - sweet, savory, and protein-rich.",
         image: "../Picture/pork bbq with rice.webp",
         prepTime: "30 min + marinating",
         calories: "620",
@@ -857,7 +857,7 @@ const mealPlans = [
           "Serve hot BBQ skewers with rice"
         ],
         tips: [
-          "Very affordable - costs around ₱150-200 for 2 servings",
+          "Very affordable - costs around â‚±150-200 for 2 servings",
           "Popular Filipino street food",
           "High protein perfect for muscle building",
           "Can use chicken instead of pork for variation"
@@ -866,8 +866,8 @@ const mealPlans = [
       {
         title: "Pancit Canton with Chicken and Vegetables",
         category: "dinner",
-        description: "💪 MUSCLE GAIN | Filipino stir-fried noodles with chicken and vegetables - high carbs and protein for gains.",
-        image: "../Picture/Pancit Canton with Chicken and Vegetables — dinner.webp",
+        description: "ðŸ’ª MUSCLE GAIN | Filipino stir-fried noodles with chicken and vegetables - high carbs and protein for gains.",
+        image: "../Picture/Pancit Canton with Chicken and Vegetables â€” dinner.webp",
         prepTime: "25 min",
         calories: "650",
         protein: "38g",
@@ -887,7 +887,7 @@ const mealPlans = [
         ],
         steps: [
           "Soak pancit canton in water until soft",
-          "Sauté garlic and onion in oil",
+          "SautÃ© garlic and onion in oil",
           "Add chicken and cook until done",
           "Add vegetables and stir-fry",
           "Add noodles, soy sauce, and oyster sauce",
@@ -895,7 +895,7 @@ const mealPlans = [
           "Serve hot with calamansi"
         ],
         tips: [
-          "Very affordable - costs around ₱150-180 for 2 servings",
+          "Very affordable - costs around â‚±150-180 for 2 servings",
           "Perfect for meal prep and parties",
           "High carbs support muscle glycogen recovery",
           "Can add shrimp or pork for variation"
@@ -904,8 +904,8 @@ const mealPlans = [
       {
         title: "Polvoron (Powdered Milk Candy)",
         category: "snack",
-        description: "💪 MUSCLE GAIN | Filipino milk candy with toasted flour and powdered milk - energy-dense, portable snack.",
-        image: "../Picture/Polvoron (Powdered Milk Candy).jpg",
+        description: "ðŸ’ª MUSCLE GAIN | Filipino milk candy with toasted flour and powdered milk - energy-dense, portable snack.",
+        image: "../Picture/Polvoron (Powdered Milk Candy).jfif",
         prepTime: "20 min",
         calories: "280",
         protein: "8g",
@@ -928,7 +928,7 @@ const mealPlans = [
           "Store in airtight container"
         ],
         tips: [
-          "Very affordable - costs around ₱50-80 for 10 pieces",
+          "Very affordable - costs around â‚±50-80 for 10 pieces",
           "Popular Filipino snack, great for energy",
           "Portable and long shelf life",
           "Can make different flavors (ube, chocolate, cookies & cream)"
@@ -939,8 +939,8 @@ const mealPlans = [
       {
         title: "Bibingka (Filipino Rice Cake)",
         category: "breakfast",
-        description: "⬆️ WEIGHT GAIN | Traditional baked rice cake with butter, sugar, and cheese - calorie-dense Filipino favorite.",
-        image: "../Picture/Bibingka (Filipino Rice Cake) — breakfast.jpg",
+        description: "â¬†ï¸ WEIGHT GAIN | Traditional baked rice cake with butter, sugar, and cheese - calorie-dense Filipino favorite.",
+        image: "../Picture/Bibingka (Filipino Rice Cake) â€” Breakfast.jfif",
         prepTime: "40 min",
         calories: "420",
         protein: "12g",
@@ -961,12 +961,12 @@ const mealPlans = [
           "Beat eggs and add coconut milk and melted butter",
           "Combine wet and dry ingredients",
           "Line pan with banana leaves",
-          "Pour batter and bake at 350°F for 25-30 minutes",
+          "Pour batter and bake at 350Â°F for 25-30 minutes",
           "Top with butter, sugar, grated coconut, and cheese",
           "Bake 5 more minutes until golden"
         ],
         tips: [
-          "Traditional Christmas breakfast - costs ₱100-150 for 4",
+          "Traditional Christmas breakfast - costs â‚±100-150 for 4",
           "Calorie-dense perfect for weight gain",
           "Best eaten warm with hot chocolate (tsokolate)",
           "Banana leaves add authentic aroma"
@@ -975,8 +975,8 @@ const mealPlans = [
       {
         title: "Pork Asado Sandwich on Pandesal",
         category: "lunch",
-        description: "⬆️ WEIGHT GAIN | Sweet braised pork on Filipino bread rolls - hearty, flavorful, calorie-dense.",
-        image: "../Picture/Pork Asado Sandwich on Pandesal — lunch.jpg",
+        description: "â¬†ï¸ WEIGHT GAIN | Sweet braised pork on Filipino bread rolls - hearty, flavorful, calorie-dense.",
+        image: "../Picture/Pork Asado Sandwich on Pandesal â€” Lunch.jfif",
         prepTime: "60 min",
         calories: "680",
         protein: "42g",
@@ -994,7 +994,7 @@ const mealPlans = [
         ],
         steps: [
           "Marinate pork in soy sauce, vinegar, garlic for 30 min",
-          "Sauté pork until browned",
+          "SautÃ© pork until browned",
           "Add marinade, water, sugar, and bay leaf",
           "Simmer 45 minutes until pork is tender and sauce thickens",
           "Slice pandesal open and butter lightly",
@@ -1002,7 +1002,7 @@ const mealPlans = [
           "Serve warm"
         ],
         tips: [
-          "Costs around ₱200-250 for 3 servings",
+          "Costs around â‚±200-250 for 3 servings",
           "Perfect for meal prep - asado lasts 3-4 days",
           "High in protein and calories for bulking",
           "Popular Filipino comfort food"
@@ -1011,8 +1011,8 @@ const mealPlans = [
       {
         title: "Filipino-Style Baked Macaroni",
         category: "dinner",
-        description: "⬆️ WEIGHT GAIN | Sweet Filipino baked pasta with ground meat and cheese - party favorite, calorie-dense.",
-        image: "../food name/Filipino style baked macaroni.jpg",
+        description: "â¬†ï¸ WEIGHT GAIN | Sweet Filipino baked pasta with ground meat and cheese - party favorite, calorie-dense.",
+        image: "../food name/Filipino style baked macaroni.jfif",
         prepTime: "50 min",
         calories: "820",
         protein: "42g",
@@ -1031,15 +1031,15 @@ const mealPlans = [
         ],
         steps: [
           "Cook macaroni according to package, drain",
-          "Sauté garlic and onion in butter",
+          "SautÃ© garlic and onion in butter",
           "Add ground meat and hotdogs, cook until done",
           "Mix in cream of mushroom soup and evaporated milk",
           "Combine with cooked macaroni",
           "Pour into baking dish, top with cheese",
-          "Bake at 350°F for 20-25 minutes until cheese melts"
+          "Bake at 350Â°F for 20-25 minutes until cheese melts"
         ],
         tips: [
-          "Costs around ₱300-400 for 4 servings",
+          "Costs around â‚±300-400 for 4 servings",
           "Perfect for parties and meal prep",
           "High in calories and carbs for weight gain",
           "Filipinos love the sweet-savory flavor"
@@ -1048,8 +1048,8 @@ const mealPlans = [
       {
         title: "Ginataang Bilo-Bilo (Coconut Milk Sweet Soup)",
         category: "snack",
-        description: "⬆️ WEIGHT GAIN | Sweet coconut milk dessert with glutinous rice balls, banana, and sweet potato - calorie-rich.",
-        image: "../Picture/Ginataang Bilo-Bilo (Coconut Milk Sweet Soup) — snack.jpg",
+        description: "â¬†ï¸ WEIGHT GAIN | Sweet coconut milk dessert with glutinous rice balls, banana, and sweet potato - calorie-rich.",
+        image: "../Picture/Ginataang Bilo-Bilo (Coconut Milk Sweet Soup) â€” snack.jpg",
         prepTime: "30 min",
         calories: "420",
         protein: "6g",
@@ -1074,7 +1074,7 @@ const mealPlans = [
           "Serve warm"
         ],
         tips: [
-          "Very affordable Filipino dessert - ₱80-100 for 3 servings",
+          "Very affordable Filipino dessert - â‚±80-100 for 3 servings",
           "High in calories perfect for weight gain",
           "Popular merienda (snack time) treat",
           "Can add jackfruit (langka) for extra flavor"
@@ -1085,8 +1085,8 @@ const mealPlans = [
       {
         title: "Champorado with Tuyo (Chocolate Rice Porridge)",
         category: "breakfast",
-        description: "🏃 PHYSICALLY FIT | Filipino chocolate rice porridge with dried fish - unique sweet-salty combo, energizing.",
-        image: "../Picture/Champorado with Tuyo (Chocolate Rice Porridge) — breakfast.jpg",
+        description: "ðŸƒ PHYSICALLY FIT | Filipino chocolate rice porridge with dried fish - unique sweet-salty combo, energizing.",
+        image: "../Picture/Champorado with Tuyo (Chocolate Rice Porridge) â€” Breakfast.jfif",
         prepTime: "20 min",
         calories: "380",
         protein: "16g",
@@ -1109,7 +1109,7 @@ const mealPlans = [
           "Serve with fried tuyo on the side"
         ],
         tips: [
-          "Very affordable - costs around ₱30-40 per serving",
+          "Very affordable - costs around â‚±30-40 per serving",
           "Classic Filipino breakfast comfort food",
           "Sweet-salty combination is traditional",
           "Provides quick energy for morning workouts"
@@ -1118,8 +1118,8 @@ const mealPlans = [
       {
         title: "Chicken Inasal Rice Bowl",
         category: "lunch",
-        description: "🏃 PHYSICALLY FIT | Bacolod-style grilled chicken with atsuete rice and atchara - smoky, tangy, balanced.",
-        image: "../Picture/Chicken Inasal Rice Bowl — lunch.jpg",
+        description: "ðŸƒ PHYSICALLY FIT | Bacolod-style grilled chicken with atsuete rice and atchara - smoky, tangy, balanced.",
+        image: "../Picture/Chicken Inasal Rice Bowl â€” Lunch.jfif",
         prepTime: "30 min + marinating",
         calories: "520",
         protein: "42g",
@@ -1144,7 +1144,7 @@ const mealPlans = [
           "Serve with atchara and sinamak (spiced vinegar)"
         ],
         tips: [
-          "Authentic Bacolod flavor - costs around ₱100-120",
+          "Authentic Bacolod flavor - costs around â‚±100-120",
           "Grilling gives smoky flavor and reduces fat",
           "High protein, moderate carbs - perfect balance",
           "Popular all over the Philippines"
@@ -1153,8 +1153,8 @@ const mealPlans = [
       {
         title: "Sinaing na Tulingan (Slow-Cooked Mackerel)",
         category: "dinner",
-        description: "🏃 PHYSICALLY FIT | Batangas-style slow-cooked mackerel with vegetables - tender, flavorful, affordable.",
-        image: "../food name/Sinaing na tulingan.JPG",
+        description: "ðŸƒ PHYSICALLY FIT | Batangas-style slow-cooked mackerel with vegetables - tender, flavorful, affordable.",
+        image: "../food name/Sinaing na tulingan.jfif",
         prepTime: "90 min",
         calories: "420",
         protein: "38g",
@@ -1179,7 +1179,7 @@ const mealPlans = [
           "Serve with rice and cooking liquid"
         ],
         tips: [
-          "Very affordable - tulingan costs ₱120-150 per 500g",
+          "Very affordable - tulingan costs â‚±120-150 per 500g",
           "Slow cooking makes bones edible and soft",
           "High in omega-3 fatty acids",
           "Traditional Batangas dish"
@@ -1188,8 +1188,8 @@ const mealPlans = [
       {
         title: "Sago't Gulaman (Tapioca and Jelly Drink)",
         category: "snack",
-        description: "🏃 PHYSICALLY FIT | Refreshing Filipino drink with tapioca pearls and gelatin - cooling, energizing, affordable.",
-        image: "../food name/sago_t gulaman.JPG",
+        description: "ðŸƒ PHYSICALLY FIT | Refreshing Filipino drink with tapioca pearls and gelatin - cooling, energizing, affordable.",
+        image: "../food name/sago_t gulaman.jfif",
         prepTime: "30 min",
         calories: "180",
         protein: "2g",
@@ -1212,7 +1212,7 @@ const mealPlans = [
           "Pour syrup and water, stir well"
         ],
         tips: [
-          "Very affordable street drink - ₱15-25 per glass",
+          "Very affordable street drink - â‚±15-25 per glass",
           "Refreshing on hot days",
           "Natural energy from sago pearls",
           "Popular Filipino refreshment"
@@ -1223,8 +1223,8 @@ const mealPlans = [
       {
         title: "Maja Blanca (Coconut Pudding)",
         category: "snack",
-        description: "⬆️ WEIGHT GAIN | Creamy Filipino coconut pudding with corn - sweet, dense, and calorie-rich dessert.",
-        image: "../Picture/Maja Blanca (Coconut Pudding) — snack.jpg",
+        description: "â¬†ï¸ WEIGHT GAIN | Creamy Filipino coconut pudding with corn - sweet, dense, and calorie-rich dessert.",
+        image: "../Picture/Maja Blanca (Coconut Pudding) â€” snack.jpg",
         prepTime: "30 min + chilling",
         calories: "280",
         protein: "4g",
@@ -1248,7 +1248,7 @@ const mealPlans = [
           "Chill until set, cut into squares"
         ],
         tips: [
-          "Popular Filipino dessert - costs ₱150-200 for whole pan",
+          "Popular Filipino dessert - costs â‚±150-200 for whole pan",
           "High in calories perfect for weight gain",
           "Can make with or without corn",
           "Best served cold"
@@ -1257,8 +1257,8 @@ const mealPlans = [
       {
         title: "Pork Binagoongan (Pork in Shrimp Paste)",
         category: "dinner",
-        description: "⬆️ WEIGHT GAIN | Savory pork cooked in shrimp paste - rich, flavorful, high-calorie Filipino dish.",
-        image: "../Picture/Pork Binagoongan (Pork in Shrimp Paste) — dinner.jpg",
+        description: "â¬†ï¸ WEIGHT GAIN | Savory pork cooked in shrimp paste - rich, flavorful, high-calorie Filipino dish.",
+        image: "../Picture/Pork Binagoongan (Pork in Shrimp Paste) â€” Dinner.jfif",
         prepTime: "40 min",
         calories: "720",
         protein: "48g",
@@ -1276,7 +1276,7 @@ const mealPlans = [
           "3 cups cooked rice"
         ],
         steps: [
-          "Sauté garlic, onion, and tomatoes",
+          "SautÃ© garlic, onion, and tomatoes",
           "Add pork and brown on all sides",
           "Add bagoong and vinegar, stir well",
           "Simmer 25-30 minutes until pork is tender",
@@ -1285,7 +1285,7 @@ const mealPlans = [
           "Serve hot with rice"
         ],
         tips: [
-          "Very flavorful - costs around ₱180-220 for 2 servings",
+          "Very flavorful - costs around â‚±180-220 for 2 servings",
           "High in calories perfect for weight gain",
           "Bagoong is fermented shrimp paste - adds umami",
           "Great with lots of rice"
@@ -1294,8 +1294,8 @@ const mealPlans = [
       {
         title: "Puto (Filipino Steamed Rice Cakes)",
         category: "snack",
-        description: "🏃 PHYSICALLY FIT | Fluffy steamed rice cakes - perfect Filipino snack, light and affordable.",
-        image: "../Picture/Puto (Filipino Steamed Rice Cakes) — snack.jpg",
+        description: "ðŸƒ PHYSICALLY FIT | Fluffy steamed rice cakes - perfect Filipino snack, light and affordable.",
+        image: "../Picture/Puto (Filipino Steamed Rice Cakes) â€” snack.jpg",
         prepTime: "30 min",
         calories: "150",
         protein: "4g",
@@ -1318,7 +1318,7 @@ const mealPlans = [
           "Let cool slightly before removing from molds"
         ],
         tips: [
-          "Very affordable - costs around ₱50-70 for 12 pieces",
+          "Very affordable - costs around â‚±50-70 for 12 pieces",
           "Popular Filipino merienda (snack)",
           "Can make in different colors and flavors",
           "Pairs well with hot chocolate or coffee"
@@ -1328,8 +1328,8 @@ const mealPlans = [
       {
         title: "Pinakbet with Bagnet (Vegetables with Crispy Pork)",
         category: "dinner",
-        description: "🔥 WEIGHT LOSS | Ilocano vegetable dish with small portion of crispy pork - low-calorie, very filling.",
-        image: "../Picture/Pinakbet with Bagnet (Vegetables with Crispy Pork) — dinner.webp",
+        description: "ðŸ”¥ WEIGHT LOSS | Ilocano vegetable dish with small portion of crispy pork - low-calorie, very filling.",
+        image: "../Picture/Pinakbet with Bagnet (Vegetables with Crispy Pork) â€” dinner.webp",
         prepTime: "25 min",
         calories: "260",
         protein: "18g",
@@ -1348,7 +1348,7 @@ const mealPlans = [
           "1.5 cups cooked brown rice per serving"
         ],
         steps: [
-          "Sauté garlic, onion, and tomatoes",
+          "SautÃ© garlic, onion, and tomatoes",
           "Add bagoong and stir for 1 minute",
           "Add kalabasa and water, simmer 5 minutes",
           "Add sitaw, talong, and okra",
@@ -1357,17 +1357,17 @@ const mealPlans = [
           "Serve with brown rice"
         ],
         tips: [
-          "Very affordable - costs around ₱100-120 for 2 servings",
+          "Very affordable - costs around â‚±100-120 for 2 servings",
           "Vegetables are low-calorie but very filling",
           "Small amount of bagnet adds flavor and protein",
           "Traditional Ilocano dish from Northern Philippines"
         ]
       },
       {
-        title: "Ginisang Tuna with Pechay (Sautéed Tuna with Bok Choy)",
+        title: "Ginisang Tuna with Pechay (SautÃ©ed Tuna with Bok Choy)",
         category: "lunch",
-        description: "🔥 WEIGHT LOSS | Filipino stir-fried canned tuna with vegetables - budget-friendly, high protein, low-calorie.",
-        image: "../food name/ginisang tuna with pechay.JPG",
+        description: "ðŸ”¥ WEIGHT LOSS | Filipino stir-fried canned tuna with vegetables - budget-friendly, high protein, low-calorie.",
+        image: "../food name/ginisang tuna with pechay.jfif",
         prepTime: "15 min",
         calories: "220",
         protein: "26g",
@@ -1384,14 +1384,14 @@ const mealPlans = [
           "1 cup cooked brown rice"
         ],
         steps: [
-          "Sauté garlic, onion, and tomatoes in oil",
+          "SautÃ© garlic, onion, and tomatoes in oil",
           "Add drained tuna and break into chunks",
           "Add soy sauce and season with salt and pepper",
           "Add pechay and stir-fry until wilted",
           "Serve hot with brown rice"
         ],
         tips: [
-          "Very affordable - canned tuna costs ₱30-50",
+          "Very affordable - canned tuna costs â‚±30-50",
           "Quick and easy Filipino ulam (viand)",
           "High protein, low calorie, perfect for weight loss",
           "Can use other leafy vegetables like kangkong"
@@ -1400,8 +1400,8 @@ const mealPlans = [
       {
         title: "Simplified Halo-Halo (Filipino Shaved Ice Dessert)",
         category: "snack",
-        description: "🏃 PHYSICALLY FIT | Light version of Filipino shaved ice dessert with fruits and beans - refreshing treat.",
-        image: "../Picture/Simplified Halo-Halo (Filipino Shaved Ice Dessert) — snack.jpg",
+        description: "ðŸƒ PHYSICALLY FIT | Light version of Filipino shaved ice dessert with fruits and beans - refreshing treat.",
+        image: "../Picture/Simplified Halo-Halo (Filipino Shaved Ice Dessert) â€” snack.jpg",
         prepTime: "10 min",
         calories: "280",
         protein: "8g",
@@ -1423,7 +1423,7 @@ const mealPlans = [
           "Mix everything together before eating"
         ],
         tips: [
-          "Popular Filipino dessert - costs ₱50-80 per serving",
+          "Popular Filipino dessert - costs â‚±50-80 per serving",
           "Very refreshing on hot days",
           "Can customize with different toppings",
           "Mix well before eating (halo means 'mix')"
@@ -1435,8 +1435,8 @@ const mealPlans = [
       {
         title: "Filipino-Style Carbonara with Hotdog",
         category: "lunch",
-        description: "⬆️ WEIGHT GAIN | Sweet Filipino carbonara with hotdog and mushrooms - creamy, filling, calorie-dense.",
-        image: "../food name/filipino style carbonara.jpg",
+        description: "â¬†ï¸ WEIGHT GAIN | Sweet Filipino carbonara with hotdog and mushrooms - creamy, filling, calorie-dense.",
+        image: "../food name/filipino style carbonara.jfif",
         prepTime: "25 min",
         calories: "720",
         protein: "32g",
@@ -1455,7 +1455,7 @@ const mealPlans = [
         ],
         steps: [
           "Cook spaghetti according to package, drain",
-          "Sauté garlic in butter, add hotdogs and mushrooms",
+          "SautÃ© garlic in butter, add hotdogs and mushrooms",
           "Add all-purpose cream and evaporated milk",
           "Simmer until sauce thickens slightly",
           "Add cheese and stir until melted",
@@ -1463,7 +1463,7 @@ const mealPlans = [
           "Toss with cooked spaghetti, garnish with parsley"
         ],
         tips: [
-          "Costs around ₱180-220 for 2 servings",
+          "Costs around â‚±180-220 for 2 servings",
           "Popular Filipino pasta dish",
           "High in calories perfect for weight gain",
           "Can add bacon for extra flavor"
@@ -1473,8 +1473,8 @@ const mealPlans = [
       {
         title: "Balanced Chicken Tinola with Extra Veggies",
         category: "lunch",
-        description: "🏃 PHYSICALLY FIT | Filipino ginger chicken soup with papaya and malunggay - light, nutritious, balanced.",
-        image: "../food name/chicken tinola with extra veggies.JPG",
+        description: "ðŸƒ PHYSICALLY FIT | Filipino ginger chicken soup with papaya and malunggay - light, nutritious, balanced.",
+        image: "../food name/chicken tinola with extra veggies.jfif",
         prepTime: "30 min",
         calories: "380",
         protein: "36g",
@@ -1492,7 +1492,7 @@ const mealPlans = [
           "1.5 cups cooked brown rice"
         ],
         steps: [
-          "Sauté garlic, onion, and ginger",
+          "SautÃ© garlic, onion, and ginger",
           "Add chicken and brown lightly",
           "Add water and bring to boil",
           "Add papaya and simmer 15 minutes",
@@ -1501,7 +1501,7 @@ const mealPlans = [
           "Serve hot with brown rice"
         ],
         tips: [
-          "Very affordable - costs around ₱100-120",
+          "Very affordable - costs around â‚±100-120",
           "Malunggay is superfood rich in vitamins",
           "Light but filling, perfect for active people",
           "Ginger aids digestion and recovery"
@@ -1510,8 +1510,8 @@ const mealPlans = [
       {
         title: "Menudo (Filipino Pork and Liver Stew)",
         category: "dinner",
-        description: "🏃 PHYSICALLY FIT | Filipino tomato-based stew with pork, liver, and vegetables - protein-rich and flavorful.",
-        image: "../Picture/Menudo (Filipino Pork and Liver Stew) — dinner.jpg",
+        description: "ðŸƒ PHYSICALLY FIT | Filipino tomato-based stew with pork, liver, and vegetables - protein-rich and flavorful.",
+        image: "../Picture/Menudo (Filipino Pork and Liver Stew) â€” Dinner.jfif",
         prepTime: "45 min",
         calories: "420",
         protein: "38g",
@@ -1531,7 +1531,7 @@ const mealPlans = [
           "2 cups cooked rice per serving"
         ],
         steps: [
-          "Sauté garlic and onion until fragrant",
+          "SautÃ© garlic and onion until fragrant",
           "Add pork and brown on all sides",
           "Add tomato sauce, soy sauce, bay leaf, and water",
           "Simmer 25 minutes until pork is tender",
@@ -1540,7 +1540,7 @@ const mealPlans = [
           "Serve hot with rice"
         ],
         tips: [
-          "Costs around ₱200-250 for 3 servings",
+          "Costs around â‚±200-250 for 3 servings",
           "Liver is rich in iron and protein",
           "Great for meal prep - lasts 3-4 days",
           "Popular Filipino party dish"
@@ -1549,8 +1549,8 @@ const mealPlans = [
       {
         title: "Pandesal with Kesong Puti and Tomatoes",
         category: "breakfast",
-        description: "🏃 PHYSICALLY FIT | Filipino bread with fresh white cheese and tomatoes - simple, affordable, balanced.",
-        image: "../Picture/Pandesal with Kesong Puti and Tomatoes — breakfast_.png",
+        description: "ðŸƒ PHYSICALLY FIT | Filipino bread with fresh white cheese and tomatoes - simple, affordable, balanced.",
+        image: "../Picture/Pandesal with Kesong Puti and Tomatoes â€” breakfast_.png",
         prepTime: "5 min",
         calories: "320",
         protein: "16g",
@@ -1574,7 +1574,7 @@ const mealPlans = [
           "Serve with hot coffee"
         ],
         tips: [
-          "Very affordable - pandesal ₱2-3 each, kesong puti ₱50-70",
+          "Very affordable - pandesal â‚±2-3 each, kesong puti â‚±50-70",
           "Kesong puti is fresh, unaged cheese similar to queso fresco",
           "Perfect light breakfast or merienda",
           "Tomatoes add freshness and vitamins"
@@ -1583,8 +1583,8 @@ const mealPlans = [
       {
         title: "Ensaladang Talong with Grilled Pork",
         category: "lunch",
-        description: "🏃 PHYSICALLY FIT | Filipino eggplant salad with grilled pork - fresh, tangy, low-calorie but filling.",
-        image: "../food name/ensaladang talong with grilled pork.JPG",
+        description: "ðŸƒ PHYSICALLY FIT | Filipino eggplant salad with grilled pork - fresh, tangy, low-calorie but filling.",
+        image: "../food name/ensaladang talong with grilled pork.jfif",
         prepTime: "20 min",
         calories: "360",
         protein: "28g",
@@ -1609,7 +1609,7 @@ const mealPlans = [
           "Serve with brown rice"
         ],
         tips: [
-          "Very affordable - costs around ₱80-100 per serving",
+          "Very affordable - costs around â‚±80-100 per serving",
           "Eggplants are low-calorie but very filling",
           "Grilled pork adds protein",
           "Popular Filipino side dish"
@@ -1618,8 +1618,8 @@ const mealPlans = [
       {
         title: "Escabecheng Isda (Sweet and Sour Fish)",
         category: "dinner",
-        description: "🔥 WEIGHT LOSS | Fried fish with sweet-sour sauce and vegetables - Filipino classic, low-calorie.",
-        image: "../Picture/Escabecheng Isda (Sweet and Sour Fish) — dinner.jpg",
+        description: "ðŸ”¥ WEIGHT LOSS | Fried fish with sweet-sour sauce and vegetables - Filipino classic, low-calorie.",
+        image: "../Picture/Escabecheng Isda (Sweet and Sour Fish) â€” Dinner.jfif",
         prepTime: "30 min",
         calories: "340",
         protein: "32g",
@@ -1637,7 +1637,7 @@ const mealPlans = [
         ],
         steps: [
           "Score fish and fry until crispy, set aside",
-          "Sauté garlic, ginger, and onion",
+          "SautÃ© garlic, ginger, and onion",
           "Add bell pepper and carrots, stir-fry",
           "Mix vinegar, soy sauce, sugar, and cornstarch",
           "Pour sauce mixture, simmer until thickened",
@@ -1654,8 +1654,8 @@ const mealPlans = [
       {
         title: "Tortang Talong (Eggplant Omelette)",
         category: "snack",
-        description: "💪 MUSCLE GAIN | Filipino eggplant omelette - high protein, simple, budget-friendly meal.",
-        image: "../Picture/Tortang Talong (Eggplant Omelette) — snack.jpg",
+        description: "ðŸ’ª MUSCLE GAIN | Filipino eggplant omelette - high protein, simple, budget-friendly meal.",
+        image: "../Picture/Tortang Talong (Eggplant Omelette) â€” snack.jpg",
         prepTime: "15 min",
         calories: "240",
         protein: "18g",
@@ -1673,14 +1673,14 @@ const mealPlans = [
         steps: [
           "Grill eggplants until skin is charred and flesh is soft",
           "Peel skin while warm, flatten flesh with fork",
-          "Sauté garlic, onion, and tomatoes (optional filling)",
+          "SautÃ© garlic, onion, and tomatoes (optional filling)",
           "Beat eggs with salt and pepper",
           "Dip flattened eggplant in beaten egg",
           "Fry in hot oil until golden brown on both sides",
           "Serve with ketchup or vinegar"
         ],
         tips: [
-          "Very affordable - costs around ₱40-60 for 2",
+          "Very affordable - costs around â‚±40-60 for 2",
           "Popular Filipino breakfast or lunch",
           "High protein from eggs",
           "Can add ground meat for extra protein"
@@ -1689,8 +1689,8 @@ const mealPlans = [
       {
         title: "Filipino Banana Bread (Banana Cake)",
         category: "snack",
-        description: "⬆️ WEIGHT GAIN | Moist Filipino banana bread - sweet, filling, calorie-dense snack or dessert.",
-        image: "../food name/filipino banana bread.JPG",
+        description: "â¬†ï¸ WEIGHT GAIN | Moist Filipino banana bread - sweet, filling, calorie-dense snack or dessert.",
+        image: "../food name/filipino banana bread.jfif",
         prepTime: "60 min",
         calories: "320",
         protein: "6g",
@@ -1708,7 +1708,7 @@ const mealPlans = [
           "Pinch of salt"
         ],
         steps: [
-          "Preheat oven to 350°F, grease loaf pan",
+          "Preheat oven to 350Â°F, grease loaf pan",
           "Mix mashed bananas, eggs, melted butter, milk, and vanilla",
           "In another bowl, mix flour, sugar, baking soda, and salt",
           "Combine wet and dry ingredients until just mixed",
@@ -1718,7 +1718,7 @@ const mealPlans = [
           "Cool before slicing"
         ],
         tips: [
-          "Costs around ₱100-150 for whole loaf",
+          "Costs around â‚±100-150 for whole loaf",
           "Popular Filipino merienda (snack)",
           "Great way to use overripe bananas",
           "Keeps for 3-4 days at room temperature"
@@ -1745,19 +1745,19 @@ const mealPlans = [
             <p class="plan-description">${meal.description}</p>
             <div class="plan-stats">
               <div class="stat">
-                <div class="stat-value">⏱️</div>
+                <div class="stat-value">â±ï¸</div>
                 <div class="stat-label">${meal.prepTime}</div>
               </div>
               <div class="stat">
-                <div class="stat-value">🔥</div>
+                <div class="stat-value">ðŸ”¥</div>
                 <div class="stat-label">${meal.calories}</div>
               </div>
               <div class="stat">
-                <div class="stat-value">💪</div>
+                <div class="stat-value">ðŸ’ª</div>
                 <div class="stat-label">${meal.protein}</div>
               </div>
               <div class="stat">
-                <div class="stat-value">🍽️</div>
+                <div class="stat-value">ðŸ½ï¸</div>
                 <div class="stat-label">${meal.servings}</div>
               </div>
             </div>
@@ -1783,10 +1783,10 @@ const mealPlans = [
       
       document.getElementById('modalTitle').textContent = meal.title;
       document.getElementById('modalMeta').innerHTML = `
-        <span>⏱️ ${meal.prepTime}</span>
-        <span>🔥 ${meal.calories}</span>
-        <span>💪 ${meal.protein}</span>
-        <span>🍽️ ${meal.servings} servings</span>
+        <span>â±ï¸ ${meal.prepTime}</span>
+        <span>ðŸ”¥ ${meal.calories}</span>
+        <span>ðŸ’ª ${meal.protein}</span>
+        <span>ðŸ½ï¸ ${meal.servings} servings</span>
         <span class="plan-badge badge-${meal.category}">${meal.category}</span>
       `;
       
@@ -1863,13 +1863,13 @@ const mealPlans = [
         // Filter by goal (based on description emoji)
         if (goalType !== 'all') {
           if (goalType === 'weight-loss') {
-            matchesGoal = meal.description.includes('🔥 WEIGHT LOSS');
+            matchesGoal = meal.description.includes('ðŸ”¥ WEIGHT LOSS');
           } else if (goalType === 'muscle-gain') {
-            matchesGoal = meal.description.includes('💪 MUSCLE GAIN');
+            matchesGoal = meal.description.includes('ðŸ’ª MUSCLE GAIN');
           } else if (goalType === 'weight-gain') {
-            matchesGoal = meal.description.includes('⬆️ WEIGHT GAIN');
+            matchesGoal = meal.description.includes('â¬†ï¸ WEIGHT GAIN');
           } else if (goalType === 'balanced') {
-            matchesGoal = meal.description.includes('🏃 PHYSICALLY FIT');
+            matchesGoal = meal.description.includes('ðŸƒ PHYSICALLY FIT');
           }
         }
 
@@ -1879,7 +1879,7 @@ const mealPlans = [
       if (filteredMeals.length === 0) {
         suggestionBox.innerHTML = `
           <div style="padding: 20px; color: var(--muted);">
-            <p>😕 No meals found matching your criteria.</p>
+            <p>ðŸ˜• No meals found matching your criteria.</p>
             <p style="margin-top: 10px; font-size: 0.9rem;">Try selecting different options or browse all meals below.</p>
           </div>
         `;
@@ -1896,10 +1896,10 @@ const mealPlans = [
         <div class="suggestion-desc">${randomMeal.description}</div>
         <img src="${randomMeal.image}" alt="${randomMeal.title}" />
         <div class="suggestion-stats">
-          <span class="suggestion-stat">⏱️ ${randomMeal.prepTime}</span>
-          <span class="suggestion-stat">🔥 ${randomMeal.calories}</span>
-          <span class="suggestion-stat">💪 ${randomMeal.protein}</span>
-          <span class="suggestion-stat">🍽️ ${randomMeal.servings}</span>
+          <span class="suggestion-stat">â±ï¸ ${randomMeal.prepTime}</span>
+          <span class="suggestion-stat">ðŸ”¥ ${randomMeal.calories}</span>
+          <span class="suggestion-stat">ðŸ’ª ${randomMeal.protein}</span>
+          <span class="suggestion-stat">ðŸ½ï¸ ${randomMeal.servings}</span>
         </div>
         <button class="view-details-btn" onclick="showMealDetails(${mealIndex})">View Full Recipe</button>
         ${filteredMeals.length > 1 ? `<button class="view-multiple-btn" onclick="showMultipleMeals()">View All ${filteredMeals.length} Matching Meals</button>` : ''}
@@ -1946,9 +1946,9 @@ const mealPlans = [
             <div class="meal-mini-content">
               <div class="meal-mini-title">${meal.title}</div>
               <div class="meal-mini-stats">
-                <span class="meal-mini-stat">⏱️ ${meal.prepTime}</span>
-                <span class="meal-mini-stat">🔥 ${meal.calories}</span>
-                <span class="meal-mini-stat">💪 ${meal.protein}</span>
+                <span class="meal-mini-stat">â±ï¸ ${meal.prepTime}</span>
+                <span class="meal-mini-stat">ðŸ”¥ ${meal.calories}</span>
+                <span class="meal-mini-stat">ðŸ’ª ${meal.protein}</span>
               </div>
             </div>
           </div>
@@ -2051,3 +2051,27 @@ const mealPlans = [
         });
       }
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
