@@ -2,17 +2,17 @@
   "cleanUrls": true,
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
-    { "source": "/about-us", "destination": "/about-us.html" },
-    { "source": "/bmi", "destination": "/bmi.html" },
-    { "source": "/meal", "destination": "/meal.html" },
-    { "source": "/workout", "destination": "/workout.html" },
-    { "source": "/profile", "destination": "/profile.html" },
+    { "source": "/about-us", "destination": "/About us.html" },
+    { "source": "/bmi", "destination": "/BMI.html" },
+    { "source": "/meal", "destination": "/Meal.html" },
+    { "source": "/workout", "destination": "/Workout.html" },
+    { "source": "/profile", "destination": "/Profile.html" },
     { "source": "/signup", "destination": "/signup.html" },
     { "source": "/login", "destination": "/login.html" },
-    { "source": "/meal-log", "destination": "/meal-log.html" },
-    { "source": "/meal-suggestions", "destination": "/meal-suggestions.html" },
-    { "source": "/exercise-plans", "destination": "/exercise-plans.html" },
-    { "source": "/nutrifit-analytics", "destination": "/nutrifit-analytics.html" }
+    { "source": "/meal-log", "destination": "/Meal log.html" },
+    { "source": "/meal-suggestions", "destination": "/meal suggestions.html" },
+    { "source": "/exercise-plans", "destination": "/exercise plans.html" },
+    { "source": "/nutrifit-analytics", "destination": "/Nutrifit Analytics.html" }
   ],
   "headers": [
     {
