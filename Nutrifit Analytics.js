@@ -120,7 +120,7 @@
         }
       }
       
-      window.location.href = 'Main.html';
+      window.location.href = 'profile.html';
     }
 
     function getBMICategory(bmi) {
