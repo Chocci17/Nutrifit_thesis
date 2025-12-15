@@ -71,7 +71,7 @@
     .navbar-logo {
       width: 44px;
       height: 44px;
-    }
+      // Renamed file to profile.css for consistency and Vercel compatibility
 
     /* Dropdown Sidebar */
     .dropdown-sidebar {
