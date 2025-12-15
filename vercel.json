@@ -1,0 +1,25 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/about-us", "destination": "/about-us.html" },
+    { "source": "/bmi", "destination": "/bmi.html" },
+    { "source": "/meal", "destination": "/meal.html" },
+    { "source": "/workout", "destination": "/workout.html" },
+    { "source": "/profile", "destination": "/profile.html" },
+    { "source": "/signup", "destination": "/signup.html" },
+    { "source": "/login", "destination": "/login.html" },
+    { "source": "/meal-log", "destination": "/meal-log.html" },
+    { "source": "/meal-suggestions", "destination": "/meal-suggestions.html" },
+    { "source": "/exercise-plans", "destination": "/exercise-plans.html" },
+    { "source": "/nutrifit-analytics", "destination": "/nutrifit-analytics.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}
