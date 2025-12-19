@@ -1,10 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   const SUPABASE_URL = 'https://pncfzxuecxzcdyxdwuok.supabase.co';
   const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBuY2Z6eHVlY3h6Y2R5eGR3dW9rIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI4Njg1NzEsImV4cCI6MjA3ODQ0NDU3MX0.BlfihjUmYAgP-9UisG4EN1srsteB_SZ9ut5TiBgAQ-E';
-  if (!window.supabaseClient) {
-    window.supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-  }
-  var supabase = window.supabaseClient;
+  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
   let isSubmitting = false;
 
@@ -52,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
           localStorage.setItem('nutrifit_session', JSON.stringify(data.session));
 
           alert('Email confirmed! Welcome to NutriFit!');
-          window.location.href = 'index.html';
+          window.location.href = 'Main.html';
         }
       } catch (err) {
         console.error('Confirmation error:', err);
@@ -130,8 +127,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
         alert('Login successful!');
         
-        // Redirect to index.html where profile check will run
-        window.location.href = 'index.html';
+        // Redirect to Main.html after login so modal logic can run
+        window.location.href = 'Main.html';
       }
 
     } catch (err) {
