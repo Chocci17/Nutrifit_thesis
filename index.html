@@ -14,7 +14,12 @@
 </head>
 <body>
 
-    <div id="bg-media" aria-hidden="true" style="position:fixed; inset:0; z-index:-1; background-image:url('Picture/banana%20cue.avif'); background-size:cover; background-position:center; filter:brightness(0.6);"></div>
+    <video autoplay muted loop playsinline id="bg-video" preload="auto" poster="Picture/banana%20cue.avif" style="position:fixed; inset:0; width:100%; height:100%; object-fit:cover; z-index:-1;">
+      <source src="background.mp4" type="video/mp4">
+      <source src="HTML/background.mp4" type="video/mp4">
+      <source src="Picture/background.mp4" type="video/mp4">
+      <!-- If none of the video sources are available the poster image will show -->
+    </video>
   <div id="bg-video-overlay"></div>
   
  <nav class="navbar"> 
