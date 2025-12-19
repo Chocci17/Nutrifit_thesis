@@ -39,19 +39,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Check if profile setup is complete
 async function checkProfileCompletion() {
   try {
-<<<<<<< HEAD
     // Query Supabase for the user's profile by user ID
     const { data: profile, error: profileError } = await supabaseClient
-=======
-    const { data: profile, error } = await supabase
->>>>>>> parent of 649e4fb (s)
       .from('profiles')
       .select('*')
       .eq('id', currentUser.id)
       .maybeSingle();
 
-    if (error) {
-      console.error('Error checking profile:', error);
+    if (profileError) {
+      console.error('Error checking profile:', profileError);
       return;
     }
 
