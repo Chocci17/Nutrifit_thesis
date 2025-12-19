@@ -1,7 +1,7 @@
 // Supabase Configuration
 const SUPABASE_URL = 'https://pncfzxuecxzcdyxdwuok.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBuY2Z6eHVlY3h6Y2R5eGR3dW9rIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI4Njg1NzEsImV4cCI6MjA3ODQ0NDU3MX0.BlfihjUmYAgP-9UisG4EN1srsteB_SZ9ut5TiBgAQ-E';
-const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // Get current user from localStorage
 const currentUser = JSON.parse(localStorage.getItem('nutrifit_user') || 'null');
@@ -39,7 +39,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Check if profile setup is complete
 async function checkProfileCompletion() {
   try {
+<<<<<<< HEAD
+    // Query Supabase for the user's profile by user ID
+    const { data: profile, error: profileError } = await supabaseClient
+=======
     const { data: profile, error } = await supabase
+>>>>>>> parent of 649e4fb (s)
       .from('profiles')
       .select('*')
       .eq('id', currentUser.id)
@@ -105,7 +110,7 @@ async function handleProfileSetupSubmit() {
     console.log('Current user:', currentUser);
 
     // Verify user is authenticated
-    const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+    const { data: { session }, error: sessionError } = await supabaseClient.auth.getSession();
     console.log('Current session:', session);
     
     if (sessionError || !session) {
@@ -137,7 +142,7 @@ async function handleProfileSetupSubmit() {
 
     // Update or insert profiles table
     console.log('Updating profiles table...');
-    const { data: profileData, error: profileError } = await supabase
+    const { data: profileData, error: profileError } = await supabaseClient
       .from('profiles')
       .upsert({
         id: currentUser.id,
@@ -163,7 +168,7 @@ async function handleProfileSetupSubmit() {
 
     // Insert or update macro_targets table
     console.log('Updating macro_targets table...');
-    const { data: targetData, error: targetError } = await supabase
+    const { data: targetData, error: targetError } = await supabaseClient
       .from('macro_targets')
       .upsert({
         user_id: currentUser.id,
