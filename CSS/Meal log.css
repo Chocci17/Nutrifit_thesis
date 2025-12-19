@@ -1,3 +1,191 @@
+  /* Selected Day panel text visibility fixes */
+  .panel-header, .panel-header span, #selectedLabel {
+    color: #fff !important;
+  }
+  .selected-day-panel, .selected-day-panel * {
+    color: #fff !important;
+  }
+  .selected-day-panel .white-bg, .selected-day-panel .white-bg * {
+    color: #111 !important;
+  }
+  .selected-day-panel input::placeholder, .selected-day-panel textarea::placeholder {
+    color: #444 !important;
+    opacity: 1 !important;
+  }
+  .selected-day-panel .muted, .selected-day-panel .instruction, .selected-day-panel .calendar-instruction {
+    color: #b5e0f7 !important;
+  }
+  /* Force white color for the calendar instruction text */
+  .cal-head > .small.muted {
+    color: #fff !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+  }
+  .meal-summary, .macro-row, .meal-item .macros, .meal-item .macro-summary {
+    color: #f3f4f6 !important;
+    font-weight: 700 !important;
+    font-size: 1.08rem !important;
+    letter-spacing: 0.01em;
+  }
+  .bottom-panel, .bottom-panel *, .bottom-panel .muted {
+    color: #111 !important;
+    font-weight: 600 !important;
+    text-shadow: none !important;
+  }
+  .bottom-panel, .bottom-panel *, .bottom-panel .muted {
+    color: #f3f4f6 !important;
+    font-weight: 600 !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.10);
+  }
+  select#fitnessGoal, select#fitnessGoal option {
+    color: #082032 !important;
+    background: #fff !important;
+    font-weight: 600 !important;
+  }
+  /* Force white color and smaller size for the calendar instruction */
+  .cal-head .small.muted {
+    color: #fff !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.12);
+  }
+  .cal-head .small.muted {
+    color: #fff !important;
+    font-size: 0.95rem !important;
+  }
+  .cal-head .small.muted {
+    color: #fff !important;
+    font-size: 0.95rem !important;
+  }
+  /* Removed invalid :contains() pseudo-class selector (not valid CSS). */
+  .inspect-day-instruction {
+    color: #fff !important;
+    font-size: 0.95rem !important;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .panel-header, .panel-header span, #selectedLabel {
+    color: #fff !important;
+  }
+  .calendar-instruction, .pick-date-instruction {
+    max-width: 340px;
+    margin: 0 auto 10px auto !important;
+    display: block !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+  .calendar-instruction, .pick-date-instruction {
+    color: #111 !important;
+    font-size: 1.13rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.01em;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  }
+  input#date,
+  input#protein,
+  input#carbs,
+  input#fat,
+  input#cal,
+  select#mealType,
+  select#fitnessGoal,
+  input#targetProtein,
+  input#targetCarbs,
+  input#targetFat,
+  input#targetCalories {
+    color: #0a3d62 !important;
+    font-size: 1.13rem !important;
+    font-weight: 600 !important;
+    background: #fff !important;
+    letter-spacing: 0.01em;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  }
+  select#mealType, select#mealType option {
+    color: #0a3d62 !important;
+    font-size: 1.13rem !important;
+    font-weight: 600 !important;
+    background: #fff !important;
+    letter-spacing: 0.01em;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  }
+  input::placeholder,
+  textarea::placeholder,
+  select:invalid {
+    color: #444 !important;
+    opacity: 1 !important;
+    font-weight: 500;
+  }
+
+  /* Ensure remarks textarea text is dark on white background for readability */
+  textarea#remarks {
+    color: #0a3d62 !important;
+    background: #ffffff !important;
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    border: 1px solid #d1d5db !important;
+  }
+  textarea#remarks::placeholder {
+    color: #9ca3af !important;
+    opacity: 1 !important;
+  }
+  .meal-type-label, .meal-item .meal-type, .meal-item .type, .meal-item .meal-label {
+    color: #f3f4f6 !important;
+    font-weight: 700;
+    font-size: 1.12rem;
+    letter-spacing: 0.01em;
+  }
+  .cal-day .date {
+    color: #f3f4f6 !important;
+    font-weight: 700;
+    font-size: 1.18rem;
+    letter-spacing: 0.01em;
+  }
+  /* Apply glass tiles only to the main containers, not every child element */
+  .cal-day, .meal-item, .bottom-panel .meal-item, .bottom-panel .meals-list {
+    background-color: rgba(255,255,255,0.06) !important;
+    color: #f3f4f6 !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+  }
+
+  /* Ensure direct children inside a meal item don't get their own separate tile look */
+  .meal-item > * {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: inherit !important;
+  }
+  .card, .card * {
+    color: #f3f4f6 !important;
+  }
+  .card .muted {
+    color: #b5e0f7 !important;
+  }
+  .bottom-panel, .bottom-panel * {
+    color: #f3f4f6 !important;
+  }
+  .bottom-panel .muted {
+    color: #b5e0f7 !important;
+  }
+   .card {
+    /* Glass card */
+    background: rgba(255,255,255,0.04);
+    color: #f3f4f6;
+    border-radius: 22px;
+    padding: 48px 36px 44px 36px;
+    box-shadow: 0 8px 32px 0 rgba(2,6,23,0.45), 0 12px 40px rgba(2,6,23,0.35);
+    border: 1px solid rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    font-size: 1.13rem;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  }
   :root{ --bg:#071025; --panel:#0f1724; --muted:#9ca3af; --text:#e6eef6; --accent:#10b981; --accent-2:#047857; --card:#0b1220 }
     *{box-sizing:border-box}
     body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);min-height:100vh;padding:20px;padding-top:100px;position:relative;overflow-x:hidden}
@@ -159,7 +347,16 @@
     @media (max-width:768px){ .grid{grid-template-columns:1fr;} .panel-right, .panel-left{order:2} }
 
     /* Card styling aligned with BMI.html */
-    .card{background:#ffffff;color:#111;border-radius:20px;padding:40px;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:none}
+    .card {
+      background: #04293A;
+      color: #f3f4f6;
+      border-radius: 22px;
+      padding: 48px 36px 44px 36px;
+      box-shadow: 0 8px 32px 0 rgba(0,0,0,0.10), 0 20px 60px rgba(0,0,0,0.18);
+      border: none;
+      font-size: 1.13rem;
+      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    }
 
     /* Calendar card layout: keep a stable height and make selected meals scrollable */
     .card.calendar-card{display:flex;flex-direction:column;min-height:460px}
@@ -169,10 +366,21 @@
     /* Left: entry form */
     form .row{display:flex;gap:10px}
     form label{display:block;font-size:1.05rem;color:#555;margin-bottom:10px}
-    input[type=date], input[type=number], select, textarea, input[type=text]{width:100%;padding:16px;border-radius:12px;border:1px solid #e6e6e6;background:#ffffff;color:#111;font-size:1.05rem}
+    input[type=date], input[type=number], select, textarea, input[type=text]{
+      width:100%;
+      padding:16px;
+      border-radius:12px;
+      border:1px solid #e6e6e6;
+      background:#ffffff;
+      color:#111;
+      font-size:1.05rem;
+      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
     textarea{min-height:80px}
     .btn{display:inline-block;padding:14px 22px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;border:none;cursor:pointer;font-weight:700;font-size:1.05rem}
-    .btn.secondary{background:transparent;border:1px solid #ddd;color:#111;padding:12px 16px}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.08);color:#f3f4f6;padding:12px 16px}
     .btn.danger{background:#ef4444;color:#fff;border:none;padding:12px 16px;border-radius:10px;cursor:pointer}
 
     .small{font-size:0.85rem;color:var(--muted)}
@@ -181,7 +389,7 @@
     .calendar{display:flex;flex-direction:column;gap:10px}
     .cal-head{display:flex;justify-content:space-between;align-items:center}
     .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
-    .cal-day{background:#ffffff;padding:16px;border-radius:10px;min-height:100px;position:relative;border:1px solid rgba(0,0,0,0.04);color:#111;font-size:1.05rem}
+    .cal-day{background:rgba(255,255,255,0.04);padding:16px;border-radius:10px;min-height:100px;position:relative;border:1px solid rgba(255,255,255,0.06);color:#f3f4f6;font-size:1.05rem;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
     .cal-day.selected{outline:2px solid rgba(16,185,129,0.18);box-shadow:0 6px 18px rgba(16,185,129,0.04);}
     .cal-day .date{font-weight:700}
     /* small indicator for days that have meals */
@@ -202,16 +410,54 @@
 
     /* list of meals for selected day */
     .meals-list{margin-top:14px;display:flex;flex-direction:column;gap:12px;max-height:320px;overflow-y:auto;padding-right:8px}
-    .meal-item{background:#ffffff;padding:16px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;border:1px solid rgba(0,0,0,0.04);color:#111}
+    .meal-item{background:rgba(255,255,255,0.06);padding:16px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;border:1px solid rgba(255,255,255,0.06);color:#f3f4f6}
+    /* Neutral muted text default */
     .muted{color:#666}
 
+    /* Clean message styling for the selected meals container */
+    #selectedMeals .muted,
+    .meals-list .muted {
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      display: inline-block !important;
+      color: #f3f4f6 !important;
+      font-weight: 600 !important;
+      text-shadow: none !important;
+    }
+
     /* Bottom panel: full-width container for selected-day viewer */
-    .bottom-panel{margin-top:30px;background:#ffffff;color:#111;border-radius:18px;padding:20px;box-shadow:0 18px 50px rgba(2,6,23,0.28);border:none}
+    .bottom-panel{
+      margin-top:30px;
+      /* glass container for selected-day viewer */
+      background: rgba(255,255,255,0.04);
+      color:#f3f4f6;
+      border-radius:18px;
+      padding:20px;
+      box-shadow:0 18px 50px rgba(2,6,23,0.45);
+      border:1px solid rgba(255,255,255,0.06);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
     .bottom-panel .panel-header{font-weight:800;margin-bottom:12px}
     .bottom-panel .meals-list{display:flex;flex-direction:row;gap:14px;overflow-x:auto;max-height:none;padding-bottom:8px;margin-top:12px}
     
-    /* Horizontal meal cards */
-    .bottom-panel .meal-item{min-width:280px;flex:0 0 280px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:16px;border-radius:12px}
+    /* Horizontal meal cards - simplified container for cleaner panel */
+    .bottom-panel .meal-item{
+      min-width:280px;
+      flex:0 0 280px;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:8px;
+      /* remove the separate visible container look */
+      padding:8px 6px !important;
+      border-radius:6px !important;
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
     .bottom-panel .meal-item > div:first-child{width:100%}
     .bottom-panel .meal-item .muted{margin-top:4px;font-size:0.9rem}
     .bottom-panel .meal-item > div:last-child{width:100%;display:flex;justify-content:space-between;align-items:center;margin-top:4px}
@@ -221,6 +467,14 @@
       .bottom-panel .meals-list{flex-direction:column;overflow-x:visible}
       .bottom-panel .meal-item{min-width:auto;flex:1;width:100%}
     }
+
+    /* New meal view layout */
+    .meal-main { width: 100%; }
+    .meal-label { font-weight:800; font-size:1.06rem; color:#f3f4f6; margin-bottom:6px }
+    .meal-context { color:#d1e8f5; font-size:0.95rem; line-height:1.2; margin-bottom:8px }
+    .meal-macros { color:#bfe6f6; font-size:0.93rem; font-weight:600 }
+    .meal-actions { display:flex;align-items:center;gap:8px }
+    .meal-actions .btn { padding:10px 12px; border-radius:10px }
 
     footer{margin-top:18px;color:var(--muted);font-size:1rem}
 
